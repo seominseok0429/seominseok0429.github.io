@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Source Themes Academic 4.7.0">
 
-  <meta name="author" content="Dahun Kim">
+  <meta name="author" content="Minseok Seo">
   <meta name="description" content="Research Scientist">
   <link rel="alternate" hreflang="en-us" href="/">
   <meta name="theme-color" content="#2962ff">
@@ -22,14 +22,14 @@
   
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
   <link rel="stylesheet" href="/css/academic.css">
-  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Dahun Kim">
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Minseok Seo">
   <link rel="manifest" href="/index.webmanifest">
 
   <link rel="canonical" href="/">
   <meta property="twitter:card" content="summary">
-  <meta property="og:site_name" content="Dahun Kim - Google DeepMind">
+  <meta property="og:site_name" content="Minseok Seo - KAIST">
   <meta property="og:url" content="/">
-  <meta property="og:title" content="Dahun Kim">
+  <meta property="og:title" content="Minseok Seo - KAIST">
   <meta property="og:description" content="Research Scientist"><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
   <meta property="twitter:image" content="img/map[gravatar:%!s(bool=false) shape:circle]"><meta property="og:locale" content="en-us">
   
@@ -46,7 +46,261 @@
   "url": "/"
 }
 </script>
-  <title>Dahun Kim</title>
+  <title>Minseok Seo</title>
+
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #667085;
+      --line: #e6eaf0;
+      --paper: #ffffff;
+      --wash: #f6f8fb;
+      --accent: #2357d9;
+      --accent-soft: #edf3ff;
+    }
+
+    body {
+      color: var(--ink);
+      line-height: 1.7;
+    }
+
+    .navbar-brand,
+    h1,
+    h2,
+    h3 {
+      letter-spacing: -0.025em;
+    }
+
+    .research-note {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(28px, 5vw, 56px);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: linear-gradient(145deg, #fff 10%, #f2f6ff 100%);
+      box-shadow: 0 18px 50px rgba(23, 32, 51, 0.07);
+    }
+
+    .research-note::after {
+      position: absolute;
+      top: -80px;
+      right: -80px;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: rgba(35, 87, 217, 0.07);
+      content: "";
+    }
+
+    .research-note__eyebrow,
+    .section-eyebrow {
+      margin-bottom: 8px;
+      color: var(--accent);
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .research-note h1 {
+      max-width: 760px;
+      margin: 0 0 20px;
+      font-size: clamp(2rem, 5vw, 3.35rem);
+      line-height: 1.08;
+    }
+
+    .research-note__lead {
+      max-width: 780px;
+      margin-bottom: 16px;
+      color: #364152;
+      font-size: clamp(1.02rem, 2vw, 1.22rem);
+    }
+
+    .research-note__steps {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .research-note__step {
+      padding: 18px;
+      border: 1px solid rgba(35, 87, 217, 0.12);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.78);
+    }
+
+    .research-note__step span {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--accent);
+      font-family: "Roboto Mono", monospace;
+      font-size: 0.75rem;
+    }
+
+    .research-note__step strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 0.96rem;
+    }
+
+    .research-note__step p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.55;
+    }
+
+    .perspectives-intro {
+      display: flex;
+      gap: 28px;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 28px 0 6px;
+    }
+
+    .perspectives-intro h2 {
+      margin: 0 0 8px;
+    }
+
+    .perspectives-intro p {
+      max-width: 720px;
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .perspectives-intro__note {
+      flex: 0 0 230px;
+      padding: 12px 15px;
+      border-left: 3px solid var(--accent);
+      background: var(--accent-soft);
+      color: #38507a;
+      font-size: 0.78rem;
+      line-height: 1.55;
+    }
+
+    #papers .col-lg-12 > h1 {
+      margin-bottom: 24px;
+      font-size: clamp(2rem, 4vw, 2.7rem);
+    }
+
+    #papers .ul-papers {
+      width: 100%;
+      padding: 0;
+    }
+
+    #papers .row {
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    #papers .ul-papers > hr {
+      margin: 42px 0 20px;
+      border-color: var(--line);
+    }
+
+    #papers .ul-papers > h2 {
+      margin-bottom: 16px;
+      color: #25314a;
+      font-size: 1.25rem;
+    }
+
+    #papers .ul-papers > li {
+      display: grid !important;
+      grid-template-columns: 220px minmax(0, 1fr);
+      gap: 24px !important;
+      margin-bottom: 18px;
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--paper);
+      transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+    }
+
+    #papers .ul-papers > li:hover {
+      transform: translateY(-2px);
+      border-color: #cdd7ed;
+      box-shadow: 0 12px 28px rgba(23, 32, 51, 0.07);
+    }
+
+    #papers .ul-papers > li > img {
+      width: 100% !important;
+      max-width: none !important;
+      aspect-ratio: 16 / 10;
+      border: 1px solid #edf0f4;
+      border-radius: 9px !important;
+      object-fit: contain;
+      background: var(--wash);
+    }
+
+    #papers .authors,
+    #papers .venue,
+    #papers .resources {
+      margin-bottom: 6px;
+    }
+
+    #papers .authors:first-child {
+      margin-bottom: 9px;
+      font-size: 1.06rem;
+      line-height: 1.45;
+    }
+
+    #papers .resources a {
+      font-weight: 600;
+    }
+
+    .perspective-panel {
+      margin-top: 14px;
+      border: 1px solid #dce4f3;
+      border-radius: 10px;
+      background: #f9fbff;
+    }
+
+    .perspective-panel summary {
+      padding: 11px 14px;
+      color: #294a90;
+      font-size: 0.86rem;
+      font-weight: 700;
+      cursor: pointer;
+      list-style-position: inside;
+    }
+
+    .perspective-panel__body {
+      padding: 0 14px 13px;
+      color: var(--muted);
+      font-size: 0.84rem;
+      line-height: 1.55;
+    }
+
+    .perspective-panel__body p {
+      margin: 0;
+    }
+
+    @media (max-width: 767px) {
+      .research-note__steps {
+        grid-template-columns: 1fr;
+      }
+
+      .perspectives-intro {
+        display: block;
+      }
+
+      .perspectives-intro__note {
+        margin-top: 18px;
+      }
+
+      #papers .ul-papers > li {
+        grid-template-columns: 1fr;
+        gap: 16px !important;
+        padding: 16px;
+      }
+
+      #papers .ul-papers > li > img {
+        aspect-ratio: 16 / 9;
+      }
+    }
+  </style>
 
 </head>
 
@@ -84,7 +338,7 @@
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/">Dahun Kim</a>
+      <a class="navbar-brand" href="/">Minseok Seo</a>
     </div>
     
     <button type="button" class="navbar-toggler" data-toggle="collapse"
@@ -93,7 +347,7 @@
     </button>
 
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/">Dahun Kim</a>
+      <a class="navbar-brand" href="/">Minseok Seo</a>
     </div>
 
     <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content"> 
@@ -104,6 +358,10 @@
 
         <li class="nav-item">
           <a class="nav-link " href="/#papers" data-target="#papers"><span>Publications</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#open-review" data-target="#open-review"><span>Open Review</span></a>
         </li>
 
         <li class="nav-item">
@@ -141,12 +399,12 @@
     <div id="profile">
       <img class="avatar avatar-circle" src="/authors/admin/profile.jpg" alt="Avatar">
       <div class="portrait-title">
-        <h2>Dahun Kim</h2>
+        <h2>Minseok Seo</h2>
 <!--         <h3>Research Scientist</h3> -->
         
         <h3>
-          <a href="https://www.deepmind.com/" target="_blank" rel="noopener">
-          <span>Google DeepMind</span>
+          <a href="https://cilabs.kaist.ac.kr/" target="_blank" rel="noopener">
+          <span>KAIST</span>
           </a>
         </h3>
       </div>
@@ -154,9 +412,9 @@
       
       <td>
       <br>
-      <a href="cv/CV_2025.pdf"><b>CV</b></a>
-        | <a href="https://scholar.google.com/citations?user=mHpN1xoAAAAJ"><b>Google Scholar</b></a>
-        | <a href="https://github.com/mcahny"><b>Github</b></a>
+      <a href="/cv/CV_2025.pdf"><b>CV</b></a>
+        | <a href="https://scholar.google.com/citations?user=nE_gu68AAAAJ&hl=ko"><b>Google Scholar</b></a>
+        | <a href="https://github.com/seominseok0429"><b>Github</b></a>
       <br>
       <br>
       </td>
@@ -167,11 +425,31 @@
 
     
 <br>
-<p>I am a  Staff Research Scientist at <strong><span style="color:#4885ed">G</span><span style="color:#db3236">o</span><span style="color:#f4c20d">o</span><span style="color:#4885ed">g</span><span style="color:#3cba54">l</span><span style="color:#db3236">e</span></strong> <a href="https://www.deepmind.com/">DeepMind</a>.</p>
-    
-<p>Recently, my research interests are on improving the capabilities of Large Multimodal Models (eg, Gemini), and understanding the interaction of vision and language.</p>
+<p>I am a Ph.D. student in Electrical Engineering at KAIST, advised by Prof. Changick Kim.</p>
 
-<p>I obtained my Ph.D. and M.S. at <a href="https://kaist.ac.kr/" target="_blank" rel="noopener">KAIST</a>, advised by Professor <a href="http://rcv.kaist.ac.kr">In So Kweon</a>. I have been fortunate to collaborate with <a href="https://research.adobe.com/">Adobe Research</a> (2019), <a href="https://ai.google/research/teams/brain/" target="_blank" rel="noopener">Google Brain</a> (2020), and <a href="https://ai.google/research/" target="_blank" rel="noopener">Google Research</a> (2021). I am a recipient of <a href="http://www.microsoft.com/en-us/research/lab/microsoft-research-asia/">Microsoft Research Asia Fellowship</a>, <a href="http://www.qualcomm.com/research/research/university-relations/innovation-fellowship/2021-south-korea">Qualcomm Innovation Fellowship</a> and <a href="https://www.nrf.re.kr/eng/page/4a5d0ace-9cbb-4d21-9b18-92c8464aa23b">Global Ph.D Fellowship</a>.</p>
+<p>
+  <strong>My research interests</strong> include 
+  <span style="color:#1f77b4; font-weight:bold;">
+    Test-time optimization and Neural Memory.
+  </span>.
+  I particularly enjoy 
+  <span style="color:#d62728; font-weight:bold;">
+    short-term performance tuning challenges
+  </span>, where rapid iteration and optimization are critical.
+</p>
+
+<p>
+  I am a 
+  <span style="color:#2ca02c; font-weight:bold;">
+    multi-time challenge winner
+  </span>, including:
+  <br>
+  <strong>🥇 CVPR 2022 BMTT Challenge – Winner</strong><br>
+  <strong>🥇 NeurIPS VisDA 2022 Challenge – Winner</strong><br>
+  <strong>🥇 NeurIPS Weather4Cast 2022 Challenge – Winner</strong><br>
+  <strong>🥇 ICCV GeoNet 2023 Challenge – Winner</strong>
+</p>
+<p><strong>Currently, I am not collaborating on any topics other than weather forecasting and test-time optimization.</strong></p>
 
     <div class="row">
 
@@ -181,10 +459,17 @@
           <li>          
             <i class="fa-li fas fa-envelope"></i>
             <div class="description">
-              <p class="course">mcahny01 [at] gmail.com</p>
-              <p class="course">mcahny [at] google.com</p>
+              <p class="course">msseok96 [at] gmail.com</p>
+              <p class="course">minseok.seo [at] kaist.ac.kr</p>
             </div>
           </li>
+          <li>  
+            <i class="fa-li fas fa-map-marker"></i>
+            <div class="description">
+              <p class="course">291 Daehak-ro, Yuseong-gu, Daejeon 34141, Republic of Korea</p>
+            </div> 
+          </li>
+       
         </ul>        
       </div>
 
@@ -194,32 +479,32 @@
           <li>
             <i class="fa-li fas fa-graduation-cap"></i>
             <div class="description">
-              <p class="course">PhD in EE, KAIST, 2022</p>
-              <p class="institution">on "Learning Dense Pixel Features for Video Processing and Understanding"</p>
+              <p class="course">PhD in EE, KAIST, 2025~ </p>
+              <p class="institution">on "Vision Foundation Model (TODO)"</p>
             </div>
           </li>
           <li>
             <i class="fa-li fas fa-graduation-cap"></i>
             <div class="description">
-              <p class="course">MS in EE, KAIST, 2018</p>
-              <p class="institution">on "Reducing Human Supervision in Supervised Learning"</p>
+              <p class="course">MS in EE, KAIST, 2023</p>
+              <p class="institution">on "Domain Adaptation"</p>
+            </div>
+          </li>
+          <li>
+            <i class="fa-li fas fa-graduation-cap"></i>
+            <div class="description">
+              <p class="course">MS in EE, Hanbat National University, 2021</p>
+              <p class="institution">on "Active Learning for AI application"</p>
             </div>
           </li>
           
           <li>
             <i class="fa-li fas fa-graduation-cap"></i>
             <div class="description">
-              <p class="course">BS in EE, KAIST, 2016</p>
+              <p class="course">BS in EE, Hanbat National University, 2020</p>
             </div>
           </li>
 
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">Exchange Student Program, 2014</p>
-              <p class="institution">KTH Royal Institute of Technology in Stockholm, Sweden</p>
-            </div>
-          </li>
         </ul>
       </div>
     </div>
@@ -237,38 +522,82 @@
     <div class="col-lg-12">
     <h1>Academic Activities</h1>
 <ul>
-  <li><b>Area Chair</b> in NeurIPS [2026 - 2023], ICML [2026 - 2025], CVPR [2026 - 2023], COLM 2026</li>
-  <li><b>Action Editor</b> of Transactions on Machine Learning Research (TMLR)</li>
-  <li><b>Outstanding Reviewer</b> in CVPR 2021, ECCV 2020</li>
-  <li>Reviewer at CVPR, NeurIPS, ICLR, ICCV, ECCV, ICML, AAAI, EG, TPAMI, TNNLS, TIP</li>
-</ul>
+  <li><b>Reviewer prize </b> ICCV 2023, ICML 2026</li>
+  <li><b>AC</b> in ICLR, 2025, CVPR2025, ECCV2026</li>
+  <li><b>Program Committee</b> in AAAI2025</li>
+  <li>Reviewer at CVPR, NeurIPS, ICLR, ICCV, ECCV, ICML, AAAI, TNNLS, TIP</li>
+<li>
+  <b>Invited talk</b> at the Industry Technology Workshop
+  <a href="https://2026.ieeeicme.org/industry-technology-workshop/" target="_blank" rel="noopener noreferrer">ICME 2026</a>,
+  <a href="https://www.youtube.com/watch?v=yBZCev9G5Ow" target="_blank" rel="noopener noreferrer">AI friends</a> 
+</li></ul>
  
     <h1>Research Experiences</h1>
 <ul>
-
-<li> <div style="float:left"><b>Google DeepMind (previously Google Brain)</b> </div><div style="float:right">Jul 2022 - Present</div> <br>
-    Staff Research Scientist<br>
+<!--<li> <div style="float:left"><b>ANTLAB</b>, Daejeon, Korea</div> <div style="float:right">Sep 2025 ~</div> <br>
+    CTO, <a href="http://antlab.co.kr/web/">ANTLAB</a>
+</li> !-->
+<li> <div style="float:left"><b>NVIDIA (INTERN) </b>, London, UK</div> <div style="float:right">July 2026 - Sep 2026</div> <br>
+    Research Scientist, <a href="-/">NVIDIA</a>
 </li>
-  
-<li> <div style="float:left"><b>Google Research</b>, LA, CA (virtual) </div><div style="float:right">May 2021 - Jan 2022</div> <br>
-    Research Intern, worked with <a href="http://liangchiehchen.com/">Liang-Chieh Chen</a>, and <a href="https://www.linkedin.com/in/jun-xie-2a68515a/">Jun Xie</a>
-</li>
-
-<li> <div style="float:left"><b>Google Brain</b>, MTV, CA (virtual) </div><div style="float:right">Jun 2020 - Nov 2020</div> <br>
-    Research Intern, worked with <a href="https://weichengkuo.github.io/">Weicheng Kuo</a>, <a href="https://scholar.google.com/citations?user=_BPdgV0AAAAJ&hl=en">Tsung-Yi Lin</a>, and <a href="https://scholar.google.com/citations?user=nkmDOPgAAAAJ&hl=en">Anelia Anegelova</a> 
-</li>
-
- <li> <div style="float:left"><b>Adobe Research</b>, San Jose, CA</div><div style="float:right">Jun 2019 - Sep 2019</div> <br>
-    Research Intern, worked with: <a href="http://joonyoung-cv.github.io">Joon-Young Lee</a>
-</li>
-
-<li> <div style="float:left"><b>KAIST</b>, Daejeon, Korea</div> <div style="float:right">Mar 2016 - Feb 2022</div> <br>
-    Research Assistant, Robotics and Computer Vision Lab.
+<li> <div style="float:left"><b>SI-Analytics (military service) </b>, Daejeon, Korea</div> <div style="float:right">Mar 2022 - Sep 2025</div> <br>
+    Research Scientist, <a href="https://si-analytics.ai/en/">SI-Analytics</a>
 </li>
 
 </ul>
     </div>
 </div>
+    </div>
+  </section>
+
+  <section id="open-review" class="home-section wg-blank" style="padding: 36px 0 12px 0;">
+    <div class="container">
+      <div class="research-note">
+        <p class="research-note__eyebrow">An open research note</p>
+        <h1>Research should invite conversation, not just accumulate citations.</h1>
+        <p class="research-note__lead">
+          AI papers are appearing faster than ever, and AI-generated reviews are becoming part of the process.
+          I believe the most useful response is not simply more volume, but more visible, thoughtful human dialogue.
+        </p>
+        <p class="research-note__lead">
+          For my new work, I plan to share an archival version openly, invite a small number of researchers whose
+          judgment I deeply respect to read it, and publish their perspectives alongside the paper—with their
+          permission, in their own words, and without editing away disagreement.
+        </p>
+
+        <div class="research-note__steps" aria-label="My open review process">
+          <div class="research-note__step">
+            <span>01</span>
+            <strong>Archive openly</strong>
+            <p>Make the work, evidence, and limitations accessible to everyone.</p>
+          </div>
+          <div class="research-note__step">
+            <span>02</span>
+            <strong>Invite trusted readers</strong>
+            <p>Ask people whose taste and judgment I respect for candid feedback.</p>
+          </div>
+          <div class="research-note__step">
+            <span>03</span>
+            <strong>Publish the dialogue</strong>
+            <p>Share their perspectives so readers can evaluate the work with richer context.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="perspectives-intro">
+        <div>
+          <p class="section-eyebrow">Reviews alongside the work</p>
+          <h2>Trusted Perspectives</h2>
+          <p>
+            Selected archival papers below include invited perspectives from researchers I admire. These notes may
+            support, question, or challenge the work; that independence is the point.
+          </p>
+        </div>
+        <div class="perspectives-intro__note">
+          These are invited personal perspectives, published with permission. They are not anonymous or
+          institutional peer review.
+        </div>
+      </div>
     </div>
   </section>
 
@@ -282,855 +611,563 @@
     </div>
     <div class="row">
         <ul class="ul-papers">
+          <hr>
+          <h2><b>Vision Foundation Model</b></h2>
+
+ <li style="display:flex; gap:16px; align-items:flex-start;">
+
+  <!-- teaser image -->
+  <img src="/papers/img/dpeth_tto.png"
+       style="
+         max-width: 240px;   /* 🔥 크기 키우기 */
+         height: auto;       /* 🔥 비율 유지 */
+         flex-shrink: 0;     /* 🔥 줄어들지 않게 */
+         border-radius: 6px;
+       ">
+
+  <!-- text -->
+  <div style="flex:1;">
+    <p class="authors"><b>Efficient Test-Time Optimization for Depth Completion via Low-Rank Decoder Adaptation</b></p>
+    <p class="authors" style="color:#626567">
+      <b>Minseok Seo*</b>, Wonjun Lee*, Jaehyuk Jang, Changick Kim
+    </p>
+    <p class="venue" style="color:#626567">arXiv 2026</p>
+    <p class="resources">
+      [
+      <a href="http://arxiv.org/abs/2603.01765">paper</a> /
+      <a href="-">code</a>
+      ]
+    </p>
+    <details class="perspective-panel">
+      <summary>Trusted Perspectives · invitations in progress</summary>
+      <div class="perspective-panel__body">
+        <p>Invited reviews will appear here with each reviewer's name, affiliation, date, and permission.</p>
+      </div>
+    </details>
+  </div>
+</li>         
+          
+<li style="display:flex; gap:16px; align-items:flex-start;">
+
+  <!-- teaser image -->
+  <img src="/papers/img/survey.png"
+       style="
+         max-width: 240px;   /* 🔥 크기 키우기 */
+         height: auto;       /* 🔥 비율 유지 */
+         flex-shrink: 0;     /* 🔥 줄어들지 않게 */
+         border-radius: 6px;
+       ">
+
+  <!-- text -->
+  <div style="flex:1;">
+    <p class="authors"><b>Visual Self-Supervised Learning in Practice: A Survey of Alignment-, Reconstruction-, and Prediction-Based Paradigms</b></p>
+    <p class="authors" style="color:#626567">
+      <b>Minseok Seo</b>, Inyong Koo, Young-tack Oh, Young-Jae Park, Dong-geol Choi, Hae-Gon Jeon, Changick Kim
+    </p>
+    <p class="venue" style="color:#626567">arXiv 2026</p>
+    <p class="resources">
+      [
+      <a href="-">paper</a> /
+      <a href="-">code</a>
+      ]
+    </p>
+    <details class="perspective-panel">
+      <summary>Trusted Perspectives · invitations in progress</summary>
+      <div class="perspective-panel__body">
+        <p>Invited reviews will appear here with each reviewer's name, affiliation, date, and permission.</p>
+      </div>
+    </details>
+  </div>
+</li>
+          
+<li style="display:flex; gap:16px; align-items:flex-start;">
+
+  <!-- teaser image -->
+  <img src="/papers/img/upa.png"
+       style="
+         max-width: 240px;   /* 🔥 크기 키우기 */
+         height: auto;       /* 🔥 비율 유지 */
+         flex-shrink: 0;     /* 🔥 줄어들지 않게 */
+         border-radius: 6px;
+       ">
+
+  <!-- text -->
+  <div style="flex:1;">
+    <p class="authors"><b>Upsample Anything: A Simple and Hard to Beat Baseline for Feature Upsampling</b></p>
+    <p class="authors" style="color:#626567">
+      <b>Minseok Seo</b>, Mark Hamilton, Changick Kim 
+    </p>
+    <p class="venue" style="color:#626567">CVPR 2026 <span style="font-weight:normal; color:#BB2222">(Compute Gold Star / Transparency Champion)</span> </p>
+    <p class="resources">
+      [
+      <a href="https://arxiv.org/abs/2511.16301">paper</a> /
+      <a href="https://seominseok0429.github.io/Upsample-Anything/">code</a>
+      ]
+    </p>
+  </div>
+</li>
+
+<li style="display:flex; gap:16px; align-items:flex-start;">
+
+  <!-- teaser image -->
+  <img src="/papers/img/titan.png"
+       style="
+         max-width: 240px;   /* 🔥 크기 키우기 */
+         height: auto;       /* 🔥 비율 유지 */
+         flex-shrink: 0;     /* 🔥 줄어들지 않게 */
+         border-radius: 6px;
+       ">
+
+  <!-- text -->
+  <div style="flex:1;">
+    <p class="authors"><b>VideoTitans: Scalable Video Prediction with Integrated Short-and Long-term Memory</b></p>
+    <p class="authors" style="color:#626567">
+      Young-Jae Park*, <b>Minseok Seo*</b>, Hae-Gon Jeon 
+    </p>
+    <p class="venue" style="color:#626567">NeurIPS 2025</p>
+    <p class="resources">
+      [
+      <a href="https://openreview.net/forum?id=86enCXORIV">paper</a> /
+      <a href="https://github.com/...">code</a>
+      ]
+    </p>
+  </div>
+</li>
         <hr>
-          <h2><b>Multimodal AI</b></h2>
-        <li>
-          <div class="description">
-            <p class="authors">Gemini Embedding 2: A Native Multimodal Embedding Model from Gemini</span></p>
-           <p class="authors"><span style="color:#626567"><b>Gemini Embedding Team, Google</b></span></p>
-            <p class="venue"><span style="color:#626567">2026</span></p>
-            <p class="resources">
-              [
-              <a href="https://arxiv.org/abs/2605.27295">paper</a>
-              ]
-            </p>
-          </div>
-        </li>
-        <li>
-          <div class="description">
-            <p class="authors">Learning to Understand Videos From Encoded Bytes</span></p>
-           <p class="authors"><span style="color:#626567">AJ Piergiovanni, Ganesh Mallya, <b>Dahun Kim</b>, Anelia Angelova</span></p>
-            <p class="venue"><span style="color:#626567">TMLR 2026</span></p>
-            <p class="resources">
-              [
-              paper
-              ]
-            </p>
-          </div>
-        </li>
-        <li>
-          <div class="description">
-            <p class="authors">Unlocking Multi-Spectral Data for Multi-Modal Models with Guided Inputs and Chain-of-Thought Reasoning</span></p>
-           <p class="authors"><span style="color:#626567"><b>Dahun Kim</b>, Ganesh Mallya, Anelia Angelova</span></p>
-            <p class="venue"><span style="color:#626567">IGARSS 2026 </span> <span style="font-weight:normal; color:#BB2222">Oral presentation</span></p>
-            <p class="resources">
-              [
-              <a href="https://arxiv.org/abs/2604.21032">paper</a>
-              ]
-            </p>
-          </div>
-        </li>
-        <li>
-          <div class="description">
-            <p class="authors">EmbeddingGemma: Powerful and Lightweight Text Representations</span></p>
-           <p class="authors"><span style="color:#626567"><b>Gemini Embedding Team, Google</b></span></p>
-            <p class="venue"><span style="color:#626567">2025</span> </p>
-            <p class="resources">
-              [
-              <a href="https://arxiv.org/abs/2509.20354">paper</a> / 
-              <a href="https://huggingface.co/collections/google/embeddinggemma-68b9ae3a72a82f0562a80dc4">huggingface</a> /
-              <a href="https://developers.googleblog.com/en/introducing-embeddinggemma/">Google blogpost</a> 
-              ]
-            </p>
-          </div>
-        </li>
-        <li>
-          <div class="description">
-            <p class="authors">Context-Adaptive Multi-Prompt Embedding with Large Language Models for Vision-Language Alignment</span></p>
-           <p class="authors"><span style="color:#626567"><b>Dahun Kim</b>, Anelia Angelova</span></p>
-            <p class="venue"><span style="color:#626567">COLM 2025 </span> </p>
-            <p class="resources">
-              [
-              <a href="https://arxiv.org/abs/2508.02762">paper</a>
-              ]
-            </p>
-          </div>
-        </li>
-        <li>
-          <div class="description">
-            <p class="authors">Gemini 2.5: Pushing the Frontier with Advanced Reasoning, Multimodality, Long Context, and Next Generation Agentic Capabilities</span></p>
-            <p class="authors"><span style="color:#626567"><b>Gemini Team, Google</b></span></p>
-            <p class="venue"><span style="color:#626567">2025 </span> </p>
-            <p class="resources">
-              [
-              <a href="https://arxiv.org/abs/2507.06261">paper</a> /
-              <a href="https://blog.google/products/gemini/gemini-2-5-model-family-expands/">Google blogpost</a>
-              ]
-            </p>
-          </div>
-        </li>
-        <li>
-          <div class="description">
-            <p class="authors">Time-Scaling State-Space Models for Dense Video Captioning</span></p>
-            <p class="authors"><span style="color:#626567">AJ Piergiovanni, Ganesh Mallya, <b>Dahun Kim</b>, Anelia Angelova</span></p>
-            <p class="venue"><span style="color:#626567">BMVC 2025 </span> </p>
-            <p class="resources">
-              [
-              <a href="https://arxiv.org/abs/2509.03426">paper</a>
-              ]
-            </p>
-          </div>
-        </li>
-        <li>
-          <div class="description">
-            <p class="authors">VideoComp: Advancing Fine-Grained Compositional and Temporal Alignment in Video-Text Models</span></p>
-            <p class="authors"><span style="color:#626567"><b>Dahun Kim</b>, AJ Piergiovanni, Ganesh Mallya, Anelia Angelova</span></p>
-            <p class="venue"><span style="color:#626567">CVPR 2025 </span> </p>
-            <p class="resources">
-              [
-              <a href="http://arxiv.org/abs/2504.03970">paper</a> / 
-              <a href="https://github.com/google-deepmind/video_comp">data</a>
-              ]
-            </p>
-          </div>
-        </li>
-        <li>
-          <div class="description">
-            <p class="authors">Zero-Shot Multi-Spectral Learning: Reimagining a Generalist Multimodal Gemini 2.5 Model for Remote Sensing Applications</span></p>
-           <p class="authors"><span style="color:#626567">Ganesh Mallya, Yotam Gigi, <b>Dahun Kim</b>, Maxim Neumann, Genady Beryozkin, Tomer Shekel, Anelia Angelova</span></p>
-            <p class="venue"><span style="color:#626567">AGU 2025</span> <span style="font-weight:normal; color:#BB2222">Oral presentation</span></p>
-            <p class="resources">
-              [
-              <a href="https://arxiv.org/abs/2509.19087">paper</a> / 
-              <a href="https://developers.googleblog.com/en/unlocking-multi-spectral-data-with-gemini/">Google blogpost</a> /
-              <a href="https://github.com/google-gemini/cookbook/blob/main/examples/multi_spectral_remote_sensing.ipynb">Colab tutorial</a>
-              ]
-            </p>
-          </div>
-        </li>
-        <li>
-          <div class="description">
-            <p class="authors">Whats in a Video: Factorized Autoregressive Decoding for Online Dense Video Captioning</span></p>
-            <p class="authors"><span style="color:#626567">AJ Piergiovanni, <b>Dahun Kim</b>, Michael S Ryoo, Isaac Noble, Anelia Angelova</span></p>
-            <p class="venue"><span style="color:#626567">Preprint 2025</span> </p>
-            <p class="resources">
-              [
-              <a href="https://arxiv.org/abs/2411.14688">paper</a>
-              ]
-            </p>
-          </div>
-        </li>
-        <li>
-          <div class="description">
-            <p class="authors">Learning Visual Grounding from Generative Vision and Language Model</span></p>
-            <p class="authors"><span style="color:#626567">Shijie Wang, <b>Dahun Kim</b>, Ali Taalimi, Chen Sun, Weicheng Kuo</span></p>
-            <p class="venue"><span style="color:#626567">WACV 2025 </span> </p>
-            <p class="resources">
-              [
-              <a href="https://arxiv.org/abs/2407.14563">paper</a>
-              ]
-            </p>
-          </div>
-        </li>
-        <li>
-          <div class="description">
-            <p class="authors">Region-centric Image-Language Pretraining for Open-Vocabulary Detection</span></p>
-            <p class="authors"><span style="color:#626567"><b>Dahun Kim</b>, Anelia Angelova, Weicheng Kuo</span></p>
-            <p class="venue"><span style="color:#626567">ECCV 2024 </span> </p>
-            <p class="resources">
-              [
-              <a href="https://arxiv.org/abs/2310.00161">paper</a> /
-              <a href="https://github.com/google-research/google-research/tree/master/fvlm/dito">code</a> / 
-              <a href="https://console.cloud.google.com/vertex-ai/publishers/google/model-garden/dito?hl=en">Google Cloud Vertex AI</a>
-              ]
-            </p>
-          </div>
-        </li>
-        <li>
-<!--             <div class="img">
-              <img src="/papers/images/2023_utut.png" class="img-responsive" alt="">
-            </div> -->
-          <div class="description">
-            <p class="authors">Textless Unit-to-Unit training for Many-to-Many Multilingual Speech-to-Speech Translation</span></p>
-            <p class="authors"><span style="color:#626567">Minsu Kim, Jeongsoo Choi, <b>Dahun Kim</b>, Yong Man Roh</span></p>
-            <p class="venue"><span style="color:#626567">TASLP 2024 </span> <span style="font-weight:normal">(IEEE/ACM Transactions on Audio, Speech and Language Processing)</span></span></p>
-            <p class="resources"></p>
-            <p class="resources">
-              [
-              <a href="https://arxiv.org/abs/2308.01831">paper</a>
-              ]
-            </p>
-          </div>
-        </li>
-        <li>
-          <div class="description">
-            <p class="authors">Omnibind: Teach to build unequal-scale modality interaction for omni-bind of all</span></p>
-            <p class="authors"><span style="color:#626567">Yuanhuiyi Lyu, Xu Zheng, <b>Dahun Kim</b>, Lin Wang</span></p>
-            <p class="venue"><span style="color:#626567">Preprint 2024</span></p>
-            <p class="resources"></p>
-            <p class="resources">
-              [
-              <a href="https://arxiv.org/abs/2405.16108">paper</a>
-              ]
-            </p>
-          </div>
-        </li>
+          <h2><b>Weather AI</b></h2>
+
+<li style="display:flex; gap:16px; align-items:flex-start;">
+
+  <!-- teaser image -->
+  <img src="/papers/img/rainODE.png"
+       style="
+         max-width: 240px;   /* 🔥 크기 키우기 */
+         height: auto;       /* 🔥 비율 유지 */
+         flex-shrink: 0;     /* 🔥 줄어들지 않게 */
+         border-radius: 6px;
+       ">
+
+  <!-- text -->
+  <div style="flex:1;">
+    <p class="authors"><b>RainODE: Continuous-Time Precipitation Forecasting with Latent Neural ODEs</b></p>
+    <p class="authors" style="color:#626567">
+      Yeeun Seong*, Doyi Kim*, Minseok Seo, and Changick Kim
+    </p>
+    <p class="venue" style="color:#626567">ECCV 2026 </p>
+    <p class="resources">
+      [
+      <a href="https://ojs.aaai.org/index.php/AAAI/article/view/35049">paper</a> /
+      <a href="https://github.com/...">code</a>
+      ]
+    </p>
+  </div>
+
+</li>
           
+<li style="display:flex; gap:16px; align-items:flex-start;">
+
+  <!-- teaser image -->
+  <img src="/papers/img/qcgs.png"
+       style="
+         max-width: 240px;   /* 🔥 크기 키우기 */
+         height: auto;       /* 🔥 비율 유지 */
+         flex-shrink: 0;     /* 🔥 줄어들지 않게 */
+         border-radius: 6px;
+       ">
+
+  <!-- text -->
+  <div style="flex:1;">
+    <p class="authors"><b>Station2Radar: query‑conditioned gaussian splatting for precipitation field</b></p>
+    <p class="authors" style="color:#626567">
+      Doyi Kim, Minseok Seo, Changick Kim
+    </p>
+    <p class="venue" style="color:#626567">ICLR 2026 </p>
+    <p class="resources">
+      [
+      <a href="https://ojs.aaai.org/index.php/AAAI/article/view/35049">paper</a> /
+      <a href="https://github.com/...">code</a>
+      ]
+    </p>
+  </div>
+
+</li>
           
+<li style="display:flex; gap:16px; align-items:flex-start;">
+
+  <!-- teaser image -->
+  <img src="/papers/img/rainf.png"
+       style="
+         max-width: 240px;   /* 🔥 크기 키우기 */
+         height: auto;       /* 🔥 비율 유지 */
+         flex-shrink: 0;     /* 🔥 줄어들지 않게 */
+         border-radius: 6px;
+       ">
+
+  <!-- text -->
+  <div style="flex:1;">
+    <p class="authors"><b>Data-driven Precipitation Nowcasting Using Satellite Imagery</b></p>
+    <p class="authors" style="color:#626567">
+      Young-Jae Park, Doyi Kim, <b>Minseok Seo</b>, Hae-Gon Jeon, Yeji Choi
+    </p>
+    <p class="venue" style="color:#626567">AAAI 2025 <span style="font-weight:normal; color:#BB2222">(ORAL)</span> </p>
+    <p class="resources">
+      [
+      <a href="https://ojs.aaai.org/index.php/AAAI/article/view/35049">paper</a> /
+      <a href="https://github.com/...">code</a>
+      ]
+    </p>
+  </div>
+
+</li>
+
+<li style="display:flex; gap:16px; align-items:flex-start;">
+
+  <!-- teaser image -->
+  <img src="/papers/img/dgdm.png"
+       style="
+         max-width: 240px;   /* 🔥 크기 키우기 */
+         height: auto;       /* 🔥 비율 유지 */
+         flex-shrink: 0;     /* 🔥 줄어들지 않게 */
+         border-radius: 6px;
+       ">
+
+  <!-- text -->
+  <div style="flex:1;">
+    <p class="authors"><b>Probabilistic Weather Forecasting with Deterministic Guidance-based Diffusion Model</b></p>
+    <p class="authors" style="color:#626567">
+      Donggeun Yoon* , <b>Minseok Seo</b> , Doyi Kim, Yeji Choi, and Donghyeon Cho
+    </p>
+    <p class="venue" style="color:#626567">ECCV 2024</p>
+    <p class="resources">
+      [
+      <a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/04326.pdf">paper</a> /
+      <a href="https://github.com/...">code</a>
+      ]
+    </p>
+  </div>
+
+</li>
+
+<li style="display:flex; gap:16px; align-items:flex-start;">
+
+  <!-- teaser image -->
+  <img src="/papers/img/tor.png"
+       style="
+         max-width: 240px;   /* 🔥 크기 키우기 */
+         height: auto;       /* 🔥 비율 유지 */
+         flex-shrink: 0;     /* 🔥 줄어들지 않게 */
+         border-radius: 6px;
+       ">
+
+  <!-- text -->
+  <div style="flex:1;">
+    <p class="authors"><b>Long-Term Typhoon Trajectory Prediction: A Physics-Conditioned Approach Without Reanalysis Data</b></p>
+    <p class="authors" style="color:#626567">
+      Young-Jae Park*, <b>Minseok Seo*</b>, Doyi Kim, Hyeri Kim, Sanghoon Choi, Beomkyu Choi, Jeongwon Ryu, Sohee Son, Hae-Gon Jeon, Yeji Choi
+    </p>
+    <p class="venue" style="color:#626567">ICLR 2024 <span style="font-weight:normal; color:#BB2222">(Spotlight)</span> </p>
+    <p class="resources">
+      [
+      <a href="https://arxiv.org/abs/2401.15726">paper</a> /
+      <a href="https://github.com/...">code</a>
+      ]
+    </p>
+  </div>
+
+</li>
           
-        <li>
-<!--             <div class="img">
-              <img src="/papers/images/blank.png" class="img-responsive" alt="">
-            </div> -->
-          <div class="description">
-            <p class="authors">Mirasol3B: A Multimodal Autoregressive model for time-aligned and contextual modalities</span></p>
-            <p class="authors"><span style="color:#626567">AJ Piergiovanni*, Isaac Nobel*, <b>Dahun Kim</b>, Michael S. Ryoo, Victor Gomes, Anelia Angelova</span></p>
-            <p class="venue"><span style="color:#626567">CVPR 2024<br> 
-            <span style="font-weight:normal;color:#BB2222"> Featured at Google AI blogpost</span></p>
-            <p class="resources">
-              [
-              <a href="https://arxiv.org/abs/2311.05698">paper</a> / 
-              <a href="https://blog.research.google/2023/11/scaling-multimodal-understanding-to.html">Google blogpost</a>
-              ]
-            </p>
-          </div>
-        </li>
-        <li>
-<!--             <div class="img">
-              <img src="/papers/images/2023_iccv.png" class="img-responsive" alt="">
-            </div> -->
-          <div class="description">
-            <p class="authors">Contrastive Feature Masking Open-Vocabulary Vision Transformer</span></p>
-            <p class="authors"><span style="color:#626567"><b>Dahun Kim</b>, Anelia Angelova, Weicheng Kuo</span></p>
-            <p class="venue"><span style="color:#626567">ICCV 2023 </span> </p>
-            <p class="resources">
-              [
-              <a href="https://arxiv.org/abs/2309.00775">paper</a>
-              ]
-            </p>
-          </div>
-        </li>
-        <li>
-<!--             <div class="img">
-              <img src="/papers/images/2023_cvpr.png" class="img-responsive" alt="">
-            </div> -->
-          <div class="description">
-            <p class="authors">Region-Aware Pretraining for Open-Vocabulary Object Detection with Vision Transformers</span></p>
-            <p class="authors"><span style="color:#626567"><b>Dahun Kim</b>, Anelia Angelova, Weicheng Kuo</span></p>
-            <p class="venue"><span style="color:#626567">CVPR 2023 </span> <span style="font-weight:normal;color:#BB2222"> Highlight presentation - top 2.5% of submissions <br></span>
-            <span style="font-weight:normal;color:#BB2222"> Featured at Google AI blogpost</span></p>
-            <p class="resources">
-              [
-              <a href="http://arxiv.org/abs/2305.07011">paper</a> /
-              <a href="https://github.com/google-research/google-research/tree/master/fvlm/rovit">code</a> / 
-              <a href="https://blog.research.google/2023/08/ro-vit-region-aware-pre-training-for.html">Google blogpost</a>
-              ]
-            </p>
-          </div>
-        </li>
-         <li>
-<!--           <div class="img">
-            <img src="/papers/images/2023_mammut.png" class="img-responsive" alt="">
-          </div> -->
-          <div class="description">
-            <p class="authors">MaMMUT: A Simple Architecture for Joint Learning for MultiModal Tasks</span></p>
-            <p class="authors"><span style="color:#626567">Weicheng Kuo*, AJ Piergiovanni*, <b>Dahun Kim</b><span>&#8224;</span>, Xiyang Luo<span>&#8224;</span>, Ben Caine, Wei Li,  Abhijit Ogale, <br/>
-            &nbsp;&nbsp; Luowei Zhou, Andrew Dai, Zhifeng Chen, Claire Cui, Anelia Angelova (*, <span>&#8224;</span> equal contribution)</span></p>
-            <p class="venue"><span style="color:#626567">TMLR 2023</span> <br>
-            <span style="font-weight:normal;color:#BB2222"> Featured at Google AI blogpost</span></p>
-            <p class="resources">
-              [
-                <a href="https://arxiv.org/abs/2303.16839">paper</a> / 
-                <a href="https://ai.googleblog.com/2023/05/mammut-simple-vision-encoder-text.html">Google blogpost</a>
-              ]
-            </p>
-          </div>
-        </li>
-          
-        <li>
-<!--           <div class="img">
-            <img src="/papers/images/2023_reclip.png" class="img-responsive" alt="">
-          </div> -->
-          <div class="description">
-            <p class="authors">RECLIP: Resource-Efficient Clip by Training with Small Images</span></p>
-      <p class="authors"><span style="color:#626567">Runze Li, <b>Dahun Kim</b>, Bir Bhanu, Weicheng Kuo</span></p>
-            <p class="venue"><span style="color:#626567">TMLR 2023</span> <br></p>
-            <p class="resources">
-              [
-                <a href="https://arxiv.org/abs/2304.06028">paper</a>
-              ]
-            </p>
-          </div>
-        </li>
-          
+<li style="display:flex; gap:16px; align-items:flex-start;">
+
+  <!-- teaser image -->
+  <img src="/papers/img/mask.png"
+       style="
+         max-width: 240px;   /* 🔥 크기 키우기 */
+         height: auto;       /* 🔥 비율 유지 */
+         flex-shrink: 0;     /* 🔥 줄어들지 않게 */
+         border-radius: 6px;
+       ">
+
+  <!-- text -->
+  <div style="flex:1;">
+    <p class="authors"><b>Masked Autoregressive Model for Weather Forecasting</b></p>
+    <p class="authors" style="color:#626567">
+      Doyi Kim*, <b>Minseok Seo*</b>, Hakjin Lee, Junghoon Seo
+    </p>
+    <p class="venue" style="color:#626567">arXiv 2024</p>
+    <p class="resources">
+      [
+      <a href="https://arxiv.org/pdf/2409.20117">paper</a> /
+      <a href="https://github.com/...">code</a>
+      ]
+    </p>
+  </div>
+</li>
+
+<li style="display:flex; gap:16px; align-items:flex-start;">
+
+  <!-- teaser image -->
+  <img src="/papers/img/w4c.png"
+       style="
+         max-width: 240px;   /* 🔥 크기 키우기 */
+         height: auto;       /* 🔥 비율 유지 */
+         flex-shrink: 0;     /* 🔥 줄어들지 않게 */
+         border-radius: 6px;
+       ">
+
+  <!-- text -->
+  <div style="flex:1;">
+    <p class="authors"><b>Weather4cast at neurips 2022: Super-resolution rain movie prediction under spatio-temporal shifts</b></p>
+    <p class="authors" style="color:#626567">
+      Weather4Forecast <span style="font-weight:normal; color:#BB2222">(Winner)</span>
+    </p>
+    <p class="venue" style="color:#626567">NeurIPS 2022 competition track</p>
+    <p class="resources">
+      [
+      <a href="https://proceedings.mlr.press/v220/gruca23a.html">paper</a> /
+      <a href="https://github.com/...">code</a>
+      ]
+    </p>
+  </div>
+</li>
           
           <hr>
-          <h2><b>Perception - Object and Video Understanding</b></h2>
+          <h2><b>Application</b></h2>
 
-        <li>
-<!--           <div class="img">
-            <img src="/papers/images/2023_mindvps.png" class="img-responsive" alt="">
-          </div> -->
-          <div class="description">
-            <p class="authors">Uni-DVPS: Unified Model for Depth-Aware Video Panoptic Segmentation</span></p>
-      <p class="authors"><span style="color:#626567">Ji-Yeon Kim, Hyun-Bin Oh, <b>Dahun Kim</b>, Tae-Hyun Oh</span></p>
-             <p class="venue"><span style="color:#626567">RAL-IROS 2024</span> <span style="font-weight:normal; color:#BB2222">Oral presentation</span><br>
-            <span style="font-weight:normal; color:#BB2222">Short version at CVPRW 2023 <span style="font-weight:normal;color:#626567">'Vision-Centric Autonomous Driving' Workshop</span><br></p>
-            <p class="resources">
-              [
-                <a href="https://vcad.site/papers/15/CameraReady/paper.pdf">paper</a>
-              ]
-            </p>
-          </div>
-        </li>
-        <li>
-<!--           <div class="img">
-            <img src="/papers/images/2023_kmax.png" class="img-responsive" alt="">
-          </div> -->
-          <div class="description">
-            <p class="authors">Video-kMaX: A Simple Unified Approach for Online and Near-Online Video Panoptic Segmentation</span></p>
-      <p class="authors"><span style="color:#626567">Inkyu Shin, <b>Dahun Kim</b>, Qihang Yu, Jun Xie, Hong-Seok Kim, Bradley Green, In So Kweon, Kuk-Jin Yoon, Liang-Chieh Chen</span></p>
-            <p class="venue"><span style="color:#626567">WACV 2024</span>  <span style="font-weight:normal;color:#BB2222">Oral presentation</span><br>
-            <span style="font-weight:normal; color:#BB2222">Short version at <a href="https://sites.google.com/view/t4v-cvpr23" style="color:#BB2222; text-decoration: underline">'Transformers for Vision'</a> workshop @ CVPR 2023</span></p>
-            <p class="resources">
-              [
-                <a href="https://arxiv.org/abs/2304.04694">paper</a> / 
-              <a href="https://www.youtube.com/watch?v=gK3bUCNnvGA">video demo</a>
-              ]
-            </p>
-          </div>
-        </li>
-        <li>
-<!--             <div class="img">
-              <img src="/papers/images/2022_tip_vps.png" class="img-responsive" alt="">
-            </div> -->
-          <div class="description">
-            <p class="authors">Dense Pixel-level Interpretation of Dynamic Scenes with Video Panoptic Segmentation</p>
-            <p class="authors"><span style="color:#626567"><b>Dahun Kim</b>, Sanghyun Woo, Joon-Young Lee, In So Kweon</span><br/></p>
-            <p class="venue"><span style="color:#626567">TIP 2022 <br></span>
-              <span style="font-weight:normal; color:#BB2222">Short version at What is Motion For (WIMF) workshop @ ECCV 2022</span></p>
-            <p class="resources">
-              [
-                <a href="https://ieeexplore.ieee.org/abstract/document/9806364">paper</a>
-              ]
-            </p>
-          </div>
-        </li>
-        <li>
-<!--             <div class="img">
-              <img src="/papers/images/2022_cvpr_tubeformer.png" class="img-responsive" alt="">
-            </div> -->
-          <div class="description">
-            <p class="authors">TubeFormer-DeepLab: Video Mask Transformer</p>
-            <p class="authors"><span style="color:#626567"><b>Dahun Kim</b>, Jun Xie, Huiyu Wang, Siyuan Qiao, Qihang Yu, Hong-Seok Kim, Hartwig Adam, In So Kweon, Liang-Chieh Chen</span></p>
-            <p class="venue"><span style="color:#626567">CVPR 2022 <br></span>
-              <span style="font-weight:normal; color:#BB2222">Ranked #1 on <a href="https://competitions.codalab.org/competitions/33634" style="color:#BB2222; text-decoration: underline">SemKITTI-DVPS</a>, &nbsp;#3 on <a href="http://www.cvlibs.net/datasets/kitti//eval_step.php" style="color:#BB2222; text-decoration: underline">KITTI-STEP</a>, and &nbsp;#4 on <a href="https://competitions.codalab.org/competitions/30712" style="color:#BB2222; text-decoration: underline">VSPW 2021</a><br>
-              Short version at <a href="https://sites.google.com/view/t4v-cvpr22" style="color:#BB2222; text-decoration: underline">'Transformers for Vision'</a> workshop @ CVPR 2022</span></p>
-            <p class="resources">
-              [
-                <a href="https://arxiv.org/abs/2205.15361">paper</a>
-              ]
-            </p>
-          </div>
-        </li>
-        <li>
-<!--             <div class="img">
-              <img src="/papers/images/2022_cvpr_cmt.png" class="img-responsive" alt="">
-            </div> -->
-          <div class="description">
-            <p class="authors">CMT-DeepLab: Dynamic Clustering Mask Transformers for Panoptic Segmentation</p>
-            <p class="authors"><span style="color:#626567">Qihang Yu, Huiyu Wang, <b>Dahun Kim</b>, Siyuan Qiao, Maxwell Collins, Yukun Zhu, Hartwig Adam, Alan Yuille, Liang-Chieh Chen</span></p>
-            <p class="venue"><span style="color:#626567">CVPR 2022  <span style="font-weight:normal;color:#BB2222">Oral presentation</span> <span style="font-weight:normal"></span><br>
-            </p>
-            <p class="resources">
-              [
-                <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Yu_CMT-DeepLab_Clustering_Mask_Transformers_for_Panoptic_Segmentation_CVPR_2022_paper.pdf">paper</a>
-              ]
-            </p>
-          </div>
-        </li>
-        <li>
-<!--             <div class="img">
-              <img src="/papers/images/2021_preprint_oln.png" class="img-responsive" alt="">
-            </div> -->
-          <div class="description">
-            <p class="authors">Learning Open-World Object Proposals without Learning to Classify</p>
-            <p class="authors"><span style="color:#626567"><b>Dahun Kim</b>, Tsung-Yi Lin, Anelia Angelova, In So Kweon, Weicheng Kuo</span></p>
-            <p class="venue"><span style="color:#626567">RAL-ICRA 2022 <br> </span>
-            <span style="font-weight:normal; color:#BB2222">Invited paper talk at Open-World Segmentation (UVO) Workshop @ ICCV 2021 <br>
-            Received Qualcomm Innovation Award 2021</span><span style="font-weight:normal"></span></p>
-            <p class="resources">
-              [
-                <a href="https://arxiv.org/abs/2108.06753">paper</a> /
-                <a href="https://github.com/mcahny/object_localization_network">code</a> / 
-                <a href="https://github.com/tensorflow/models/blob/master/official/legacy/detection/configs/olnmask_config.py">tf2</a> /
-                <a href="https://sites.google.com/view/unidentified-video-object/workshop-program">talk</a>
-              ]
-            </p>
-          </div>
-        </li>
-        <li>
-<!--             <div class="img">
-              <img src="/papers/images/2022_wacv.png" class="img-responsive" alt="">
-            </div> -->
-          <div class="description">
-            <p class="authors">Tailor Me: An Editing Network for Fashion Attribute Shape Manipulation</p>
-            <p class="authors"><span style="color:#626567">Youngjoong Kwon, Stefano Petrangeli, <b>Dahun Kim</b>, Haoliang Wang, Vishy Swaminathan, Henry Fuchs</span></p>
-            <p class="venue"><span style="color:#626567">WACV 2022 <span style="font-weight:normal"></span></span></p>
-            <p class="resources">
-              [
-                <a href="https://openaccess.thecvf.com/content/WACV2022/html/Kwon_Tailor_Me_An_Editing_Network_for_Fashion_Attribute_Shape_Manipulation_WACV_2022_paper.html">paper</a>
-              ]
-            </p>
-          </div>
-        </li>
+<li style="display:flex; gap:16px; align-items:flex-start;">
 
-        <li>
-<!--             <div class="img">
-              <img src="/papers/images/2021_bmvc.png" class="img-responsive" alt="">
-            </div> -->
-          <div class="description">
-            <p class="authors">Global Context and Geometric Priors for Effective Non-Local Self-Attention</p>
-            <p class="authors"><span style="color:#626567">Sanghyun Woo, <b>Dahun Kim</b>, Joon-Young Lee, In So Kweon</span></p>
-            <p class="venue"><span style="color:#626567">BMVC 2021 <br> </span>
-              <span style="font-weight:normal; color:#BB2222">Received Bronze Prize, 27th HumanTech Paper Award, Samsung Electronics Co., Ltd</span><span style="font-weight:normal"></span></p>
-            <p class="resources">
-              [
-                <a href="https://www.bmvc2021-virtualconference.com/conference/papers/paper_0894.html">paper</a>
-              ]
-            </p>
-          </div>
-        </li>
-        <li>
-<!--             <div class="img">
-              <img src="/papers/images/2021_tech_deeplab2.png" class="img-responsive" alt="">
-            </div> -->
-          <div class="description">
-            <p class="authors">DeepLab2: A TensorFlow Library for Deep Labeling</p>
-            <p class="authors"><span style="color:#626567">Mark Weber, Huiyu Wang, Siyuan Qiao, Jun Xie, Maxwell D. Collins, Yukun Zhu, Liangzhe Yuan,<br/>
-            &nbsp;&nbsp; <b>Dahun Kim</b>, Qihang Yu, Daniel Cremers, Laura Leal-Taixe, Alan L. Yuille, Florian Schroff, Hartwig Adam, Liang-Chieh Chen</span></p>
-            <p class="venue"><span style="color:#626567">Technical report 2021 <span style="font-weight:normal;color:#BB2222">Internal code contribution</span><span style="font-weight:normal"></span></span></p>
+  <!-- teaser image -->
+  <img src="/papers/img/self_pair.png"
+       style="
+         max-width: 240px;   /* 🔥 크기 키우기 */
+         height: auto;       /* 🔥 비율 유지 */
+         flex-shrink: 0;     /* 🔥 줄어들지 않게 */
+         border-radius: 6px;
+       ">
 
-            <p class="resources">
-              [
-                <a href="https://arxiv.org/abs/2106.09748">paper</a> /
-                <a href="https://github.com/google-research/deeplab2">code</a>
-              ]
-            </p>
-          </div>
-        </li>
-        <li>
-<!--             <div class="img">
-              <img src="/papers/images/2021_cvpr_vps.png" class="img-responsive" alt="">
-            </div> -->
-          <div class="description">
-            <p class="authors">Learning to Associate Every Segment for Video Panoptic Segmentation</p>
-            <p class="authors"><span style="color:#626567">Sanghyun Woo, <b>Dahun Kim</b>, Joon-Young Lee, In So Kweon</span></p>
-            <p class="venue"><span style="color:#626567">CVPR 2021 <span style="font-weight:normal"></span></span></p>
-            <p class="resources">
-              [
-                <a href="https://arxiv.org/abs/2106.09453/">paper</a>
-              ]
-            </p>
-          </div>
-        </li>
-        <li>
-<!--             <div class="img">
-              <img src="/papers/images/2021_wacv_boundary.png" class="img-responsive" alt="">
-            </div> -->
-          <div class="description">
-            <p class="authors">The Devil is in the Boundary: Exploiting Boundary Representation for Basis-based Instance Segmentation</p>
-            <p class="authors"><span style="color:#626567">Myungchul Kim, Sanghyun Woo, <b>Dahun Kim</b>, In So Kweon</span></p>
-            <p class="venue"><span style="color:#626567">WACV 2021 <span style="font-weight:normal"></span> </span></p>
-            <p class="resources">
-              [
-                <a href="https://arxiv.org/abs/2011.13241">paper</a>
-              ]
-            </p>
-          </div>
-        </li>
-                     
-        <li>
-<!--             <div class="img">
-              <img src="/papers/images/2020_bmvc.png" class="img-responsive" alt="">
-            </div> -->
-          <div class="description">
-            <p class="authors">Align-and-Attend Network for Globally and Locally Coherent Video Inpainting</p>
-            <p class="authors"><span style="color:#626567">Sanghyun Woo, <b>Dahun Kim</b>, KwanYoung Park, Joon-Young Lee, In So Kweon</span></p>
-            <p class="venue"><span style="color:#626567">BMVC 2020 <span style="font-weight:normal">(Acceptance: 195/670 ≈ 29.1%)</span></span></p>
-            <p class="resources">
-              [
-                <a href="https://arxiv.org/abs/1905.13066">paper</a>
-              ]
-            </p>
-          </div>
-        </li>
-
-        <li>
-<!--             <div class="img">
-              <img src="/papers/images/2020_cvpr_vps.png" class="img-responsive" alt="">
-            </div> -->
-          <div class="description">
-            <p class="authors">Video Panoptic Segmentation</p>
-            <p class="authors"><span style="color:#626567"><b>Dahun Kim</b>, Sanghyun Woo, Joon-Young Lee, In So Kweon</span></p>
-            <p class="venue"><span style="color:#626567">CVPR 2020  <span style="font-weight:normal;color:#BB2222">Oral presentation</span> <span style="font-weight:normal">(Acceptance: 335/6656 ≈ 5.0%)</span>
-            <br> <span style="font-weight:normal;color:#BB2222">Patented</span></span></p>
-            <p class="resources">
-              [
-                <a href="https://arxiv.org/abs/2006.11339">paper</a> /
-                <a href="https://github.com/mcahny/vps">code</a> /
-                <a href="https://sites.google.com/view/video-panoptic">project</a>
-              ]
-            </p>
-          </div>
-        </li>
-
-        <li>
-<!--             <div class="img">
-              <img src="/papers/images/2019_pami.png" class="img-responsive" alt="">
-            </div> -->
-          <div class="description">
-            <p class="authors">Recurrent Temporal Aggregation Framework for Deep Video Inpainting </p>
-            <p class="authors"><span style="color:#626567"><b>Dahun Kim*</b>, Sanghyun Woo*, Joon-Young Lee, In So Kweon (* equal contribution) </span></p>
-            <p class="venue"><span style="color:#626567">TPAMI 2020 </span> <br>
-              <span style="font-weight:normal; color:#BB2222">Received KAIST-Samsung Industry-University Cooperation Best Paper Award</span></p>
-            <p class="resources">
-              [
-                <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8931251">paper</a> /
-                <a href="https://github.com/mcahny/Deep-Video-Inpainting"> code </a> 
-              ]
-            </p>
-          </div>
-        </li>
-
-
-        <li>
-<!--             <div class="img">
-              <img src="/papers/images/2020_aaai_hidetell.jpeg" class="img-responsive" alt="">
-            </div> -->
-          <div class="description">
-            <p class="authors">Hide-and-Tell: Learning to Bridge Photo Streams for Visual Storytelling</p>
-            <p class="authors"><span style="color:#626567">Yunjae Jung, <b>Dahun Kim</b>, Sanghyun Woo, Kyungsu Kim, Sungjin Kim, In So Kweon</span></p>
-            <p class="venue"><span style="color:#626567">AAAI 2020  <span style="font-weight:normal">(Acceptance: 1591/7737 ≈ 20.6%)</span></span></p>
-            <p class="resources">
-              [
-                <a href="https://arxiv.org/abs/2002.00774">paper</a>
-              ]
-            </p>
-          </div>
-        </li>
-
-        <li>
-<!--             <div class="img">
-              <img src="/papers/images/2019_cvpr_bvdnet.jpg" class="img-responsive" alt="">
-            </div> -->
+  <!-- text -->
+  <div style="flex:1;">
+    <p class="authors"><b>Self-Pair: Synthesizing Changes From Single Source for Object Change Detection in Remote Sensing Imagery</b></p>
+    <p class="authors" style="color:#626567">
+      <b>Minseok Seo</b>, Hakjin Lee, Yongjin Jeon, Junghoon Seo
+    </p>
+    <p class="venue" style="color:#626567">WACV 2023</p>
+    <p class="resources">
+      [
+      <a href="https://openaccess.thecvf.com/content/WACV2023/html/Seo_Self-Pair_Synthesizing_Changes_From_Single_Source_for_Object_Change_Detection_WACV_2023_paper.html">paper</a> /
+      <a href="https://github.com/...">code</a>
+      ]
+    </p>
+  </div>
+</li>
           
-          <div class="description">
-            <p class="authors">Deep Blind Video Decaptioning by Temporal Aggregation and Recurrence</p>
-            <p class="authors"><span style="color:#626567"><b>Dahun Kim*</b>, Sanghyun Woo*, Joon-Young Lee, In So Kweon (* equal contribution) </span></p>
-            <p class="venue"><span style="color:#626567">CVPR 2019 <span style="font-weight:normal">(Acceptance: 1294/5160 ≈ 25.2%)</span></span></br></p>
-            <span style="font-weight:normal; color:#BB2222"> 1st place winner of ECCV 2018 Chalearn LAP Video De-Captioning Challenge</span> 
-            <p class="resources">
-              [
-                <a href="https://arxiv.org/abs/1905.02949">paper</a>
-                /<a href="https://github.com/mcahny/Deep-Video-Inpainting"> code </a>    
-                /<a href="https://www.youtube.com/watch?v=8rcn5RGExO8&t=5s"> video</a>           
-                /<a href="https://sites.google.com/view/bvdnet/"> project </a>                
-              ]
-            </p>
-          </div>
-        </li>
+<li style="display:flex; gap:16px; align-items:flex-start;">
 
-        <li>
-<!--             <div class="img">
-              <img src="/papers/images/2019_cvpr_vinet.jpg" class="img-responsive" alt="">
-            </div> -->
+  <!-- teaser image -->
+  <img src="/papers/img/bda.png"
+       style="
+         max-width: 240px;   /* 🔥 크기 키우기 */
+         height: auto;       /* 🔥 비율 유지 */
+         flex-shrink: 0;     /* 🔥 줄어들지 않게 */
+         border-radius: 6px;
+       ">
+
+  <!-- text -->
+  <div style="flex:1;">
+    <p class="authors"><b>Bidirectional domain mixup for domain adaptive semantic segmentation</b></p>
+    <p class="authors" style="color:#626567">
+      Daehan Kim*, <b>Minseok Seo*</b>, Kwanyong Park, Inkyu Shin, Sanghyun Woo, In So Kweon, Dong-Geol Choi
+    </p>
+    <p class="venue" style="color:#626567">AAAI 2023 <span style="font-weight:normal; color:#BB2222">(ORAL)</span></p>
+    <p class="resources">
+      [
+      <a href="https://arxiv.org/abs/2303.09779">paper</a> /
+      <a href="https://github.com/...">code</a>
+      ]
+    </p>
+  </div>
+</li>
           
-          <div class="description">
-            <p class="authors">Deep Video Inpainting</p>
-            <p class="authors"><span style="color:#626567"><b>Dahun Kim*</b>, Sanghyun Woo*, Joon-Young Lee, In So Kweon (* equal contribution)</span></p>
-            <p class="venue"><span style="color:#626567">CVPR 2019 <span style="font-weight:normal">(Acceptance: 1294/5160 ≈ 25.2%)</span></span></p>
-            <p class="resources">
-              [
-                <a href="https://arxiv.org/abs/1905.01639">paper</a>
-                /<a href="https://github.com/mcahny/Deep-Video-Inpainting"> code </a>    
-                /<a href="https://www.youtube.com/watch?v=RtThGNTvkjY"> video</a>           
-                /<a href="https://sites.google.com/view/deepvinet/"> project </a>                
-              ]
-            </p>
-          </div>
-        </li>
+<li style="display:flex; gap:16px; align-items:flex-start;">
 
-        <li>
-<!--             <div class="img">
-              <img src="/papers/images/2019_aaai_cubic.png" class="img-responsive" alt="">
-            </div> -->
-          <div class="description">
-            <p class="authors">Self-Supervised Video Representation Learning with Space-Time Cubic Puzzles</p>
-            <p class="authors"><span style="color:#626567"><b>Dahun Kim</b>, Donghyeon Cho, In So Kweon</span></p>
-            <p class="venue"><span style="color:#626567">AAAI 2019 <span style="font-weight:normal;color:#BB2222">Oral presentation</span> <span style="font-weight:normal">(Acceptance: 459/7095 ≈ 6.5%)</span></span></p>
-            <p class="resources">
-              [
-                <a href="https://arxiv.org/abs/1811.09795"> paper </a>
-              ]
-            </p>
-          </div>
-        </li>
+  <!-- teaser image -->
+  <img src="/papers/img/visda.png"
+       style="
+         max-width: 240px;   /* 🔥 크기 키우기 */
+         height: auto;       /* 🔥 비율 유지 */
+         flex-shrink: 0;     /* 🔥 줄어들지 않게 */
+         border-radius: 6px;
+       ">
 
-        <li>
-<!--             <div class="img">
-              <img src="/papers/images/2019_aaai_csnet.png" class="img-responsive" alt="">
-            </div> -->
-          <div class="description">
-            <p class="authors">Discriminative Feature Learning for Unsupervised Video Summarization</p>
-            <p class="authors"><span style="color:#626567">Yunjae Jung, Donghyeon Cho, <b>Dahun Kim</b>, Sanghyun Woo, In So Kweon</span></p>
-            <p class="venue"><span style="color:#626567">AAAI 2019 <span style="font-weight:normal;color:#BB2222">Oral presentation </span><span style="font-weight:normal">(Acceptance: 459/7095 ≈ 6.5%)</span></span><br>
-            <span style="font-weight:normal; color:#BB2222">Received Honorable Mention, 25th HumanTech Paper Award, Samsung Electronics Co., Ltd<br>Patented</span></p>
-            <p class="resources">
-              [
-                <a href="https://arxiv.org/abs/1811.09791"> paper </a>
-              ]
-            </p>
-          </div>
-        </li>
+  <!-- text -->
+  <div style="flex:1;">
+    <p class="authors"><b>VisDA 2022 challenge: Domain adaptation for industrial waste sorting</b></p>
+    <p class="authors" style="color:#626567">
+      VisDA <span style="font-weight:normal; color:#BB2222">(Winner)</span>
+    </p>
+    <p class="venue" style="color:#626567">NeurIPS 2022 Competition Track </p>
+    <p class="resources">
+      [
+      <a href="https://proceedings.mlr.press/v220/bashkirova23a">paper</a> /
+      <a href="https://github.com/...">code</a>
+      ]
+    </p>
+  </div>
+</li>          
 
-        <li>
-<!--             <div class="img">
-              <img src="/papers/images/2019_mm_retarget.jpg.JPG" class="img-responsive" alt="">
-            </div> -->
-          <div class="description">
-            <p class="authors">Video Retargeting: Trade-off between Content Preservation and Spatio-temporal Consistency</p>
-            <p class="authors"><span style="color:#626567">Donghyeon Cho, Yunjae Jung, Francois Rameau, <b>Dahun Kim</b>, Sanghyun Woo and In So Kweon</span></p>
-            <p class="venue"><span style="color:#626567">MM 2019  <span style="font-weight:normal">(Acceptance: 252/936 ≈ 26.9%)</span></span></p>
-            <p class="resources">
-              [
-                <a href="https://dl.acm.org/citation.cfm?id=3350895"> paper </a>
-              ]
-            </p>
-          </div>
-        </li>
+<li style="display:flex; gap:16px; align-items:flex-start;">
 
-        <li>
-<!--             <div class="img">
-              <img src="/papers/images/2019_mm_domain.JPG" class="img-responsive" alt="">
-            </div> -->
-          <div class="description">
-            <p class="authors">Preserving Semantic and Temporal Consistency for Unpaired Video-to-Video Translation</p>
-            <p class="authors"><span style="color:#626567">Kwanyong Park, Sanghyun Woo, <b>Dahun Kim</b>, Donghyeon Cho, In So Kweon</span></p>
-            <p class="venue"><span style="color:#626567">MM 2019 <span style="font-weight:normal">(Acceptance: 252/936 ≈ 26.9%)</span></span></p>
-            <p class="resources">
-              [
-                <a href="https://arxiv.org/abs/1908.07683"> paper </a>
-              ]
-            </p>
-          </div>
-        </li>
+  <!-- teaser image -->
+  <img src="/papers/img/ucd.png"
+       style="
+         max-width: 240px;   /* 🔥 크기 키우기 */
+         height: auto;       /* 🔥 비율 유지 */
+         flex-shrink: 0;     /* 🔥 줄어들지 않게 */
+         border-radius: 6px;
+       ">
 
-        <li>
-<!--             <div class="img">
-              <img src="/papers/images/2018_nips.png" class="img-responsive" alt="">
-            </div> -->
-          <div class="description">
-            <p class="authors">LinkNet: Relational Embedding for Scene Graph</p>
-            <p class="authors"><span style="color:#626567">Sanghyun Woo*, <b>Dahun Kim*</b>, Donghyeon Cho, In So Kweon (* equal contribution)</span></p>
-            <p class="venue"><span style="color:#626567">NeurIPS 2018  <span style="font-weight:normal">(Acceptance: 1011/4856 ≈ 20.8%)</span></span></p>
-            <p class="resources">
-              [
-                <a href="https://arxiv.org/abs/1811.06410"> paper </a>
-              ]
-            </p>
-          </div>
-        </li>
+  <!-- text -->
+  <div style="flex:1;">
+    <p class="authors"><b>Unsupervised change detection based on image reconstruction loss</b></p>
+    <p class="authors" style="color:#626567">
+      Hyeoncheol Noh*, Jingi Ju*, <b>Minseok Seo*</b>, Jongchan Park, Dong-Geol Choi
+    </p>
+    <p class="venue" style="color:#626567">CVPR 2022</p>
+    <p class="resources">
+      [
+      <a href="https://openaccess.thecvf.com/content/CVPR2022W/EarthVision/papers/Noh_Unsupervised_Change_Detection_Based_on_Image_Reconstruction_Loss_CVPRW_2022_paper.pdf">paper</a> /
+      <a href="https://github.com/...">code</a>
+      ]
+    </p>
+  </div>
+</li>
 
-        <li>
-<!--             <div class="img">
-              <img src="/papers/images/2018_wacv_teaser.jpg" class="img-responsive" alt="">
-            </div> -->
-          <div class="description">
-            <p class="authors">Learning Image Representations by Completing Damaged Jigsaw Puzzles</p>
-            <p class="authors"><span style="color:#626567"><b>Dahun Kim</b>, Donghyeon Cho, Donggeun Yoo, In So Kweon</span></p>
-            <p class="venue"><span style="color:#626567">WACV 2018</span></p>
-            <p class="resources">
-              [
-                <a href="https://arxiv.org/abs/1802.01880"> paper </a>
-              ]
-            </p>
-          </div>
-        </li>
-        <li>
-<!--             <div class="img">
-              <img src="/papers/images/2017_iccv_tpl.png" class="img-responsive" alt="">
-            </div> -->
-          <div class="description">
-            <p class="authors">Two Phase Learning for Weakly Supervised Object Localization</p>
-            <p class="authors"><span style="color:#626567"><b>Dahun Kim</b>, Donghyeon Cho, Donggeun Yoo, In So Kweon</span></p>
-            <p class="venue"><span style="color:#626567">ICCV 2017 <span style="font-weight:normal">(Acceptance: 621/2143 ≈ 28.9%)</span></span></p>
-            <p class="resources">
-              [
-                <a href="https://arxiv.org/abs/1708.02108"> paper </a>
-              ]
-            </p>
-          </div>
-        </li>
+<li style="display:flex; gap:16px; align-items:flex-start;">
 
+  <!-- teaser image -->
+  <img src="/papers/img/pt4al.png"
+       style="
+         max-width: 240px;   /* 🔥 크기 키우기 */
+         height: auto;       /* 🔥 비율 유지 */
+         flex-shrink: 0;     /* 🔥 줄어들지 않게 */
+         border-radius: 6px;
+       ">
 
+  <!-- text -->
+  <div style="flex:1;">
+    <p class="authors"><b>Pt4al: Using self-supervised pretext tasks for active learning</b></p>
+    <p class="authors" style="color:#626567">
+      John Seon Keun Yi*, <b>Minseok Seo*</b>, Jongchan Park, Dong-Geol Choi
+    </p>
+    <p class="venue" style="color:#626567">ECCV 2022</p>
+    <p class="resources">
+      [
+      <a href="https://link.springer.com/chapter/10.1007/978-3-031-19809-0_34">paper</a> /
+      <a href="https://github.com/...">code</a>
+      ]
+    </p>
+  </div>
+</li>
 
+<li style="display:flex; gap:16px; align-items:flex-start;">
 
+  <!-- teaser image -->
+  <img src="/papers/img/sampler.png"
+       style="
+         max-width: 240px;   /* 🔥 크기 키우기 */
+         height: auto;       /* 🔥 비율 유지 */
+         flex-shrink: 0;     /* 🔥 줄어들지 않게 */
+         border-radius: 6px;
+       ">
 
+  <!-- text -->
+  <div style="flex:1;">
+    <p class="authors"><b>A self-supervised sampler for efficient action recognition: Real-world applications in surveillance systems</b></p>
+    <p class="authors" style="color:#626567">
+      <b>Minseok Seo</b>, Donghyeon Cho, Sangwoo Lee, Jongchan Park, Daehan Kim, Jaemin Lee, Jingi Ju, Hyeoncheol Noh, Dong-Geol Choi
+    </p>
+    <p class="venue" style="color:#626567">RAL-ICLR 2021</p>
+    <p class="resources">
+      [
+      <a href="https://ieeexplore.ieee.org/abstract/document/9667179">paper</a> /
+      <a href="https://github.com/...">code</a>
+      ]
+    </p>
+  </div>
+</li>
 
+<li style="display:flex; gap:16px; align-items:flex-start;">
 
+  <!-- teaser image -->
+  <img src="/papers/img/ocr.png"
+       style="
+         max-width: 240px;   /* 🔥 크기 키우기 */
+         height: auto;       /* 🔥 비율 유지 */
+         flex-shrink: 0;     /* 🔥 줄어들지 않게 */
+         border-radius: 6px;
+       ">
 
-                  
-          <hr>
-          <h2><b>3D Representation - Avatar Modeling</b></h2>
-
-
-<li>
-<!--             <div class="img">
-              <img src="/papers/images/2023_iclr.png" class="img-responsive" alt="">
-            </div> -->
-          <div class="description">
-            <p class="authors">Neural Image-based Avatars: Generalizable Radiance Fields for Human Avatar Modeling</p>
-            <p class="authors"><span style="color:#626567">Youngjoong Kwon, <b>Dahun Kim</b>, Duygu Ceylan, Henry Fuchs</span></p>
-            <p class="venue"><span style="color:#626567">ICLR 2023 <br></span></p>
-            <p class="resources">
-              [
-                <a href="https://arxiv.org/abs/2304.04897">paper</a> / 
-                <a href="https://youngjoongunc.github.io/nia/">project</a>
-              ]
-            </p>
-          </div>
-        </li>
-        <li>
-<!--             <div class="img">
-              <img src="/papers/images/2021_neurips_nhp.png" class="img-responsive" alt="">
-            </div> -->
-          <div class="description">
-            <p class="authors">Neural Human Performer: Learning Generalizable Radiance Fields for Human Performance Rendering</p>
-            <p class="authors"><span style="color:#626567">Youngjoong Kwon, <b>Dahun Kim</b>, Duygu Ceylan, Henry Fuchs</span></p>
-            <p class="venue"><span style="color:#626567">NeurIPS 2021 <span style="font-weight:normal;color:#BB2222">Spotlight presentation</span> <span style="font-weight:normal">(Acceptance: < 3.0%) </span><br>
-              <span style="font-weight:normal; color:#BB2222">Received Bronze Prize, 28th HumanTech Paper Award, Samsung Electronics Co., Ltd</span><span style="font-weight:normal"></span></p>              
-            <p class="resources">
-              [
-                <a href="https://arxiv.org/abs/2109.07448">paper</a> /
-                <a href="https://github.com/YoungJoongUNC/Neural_Human_Performer">code<a> /
-                <a href="https://youngjoongunc.github.io/nhp/">project</a>
-              ]
-            </p>
-          </div>
-        </li>
-
-                  
-
-                  
-        <li>
-<!--             <div class="img">
-              <img src="/papers/images/2020_mm.png" class="img-responsive" alt="" >
-            </div> -->
-          <div class="description">
-            <p class="authors">Rotationally-Consistent Novel View Synthesis for Humans</p>
-            <p class="authors"><span style="color:#626567">Youngjoong Kwon, Stefano Petrangeli, <b>Dahun Kim</b>, Haoliang Wang, Henry Fuchs, Vishy Swaminathan</span></p>
-            <p class="venue"><span style="color:#626567">MM 2020 <span style="font-weight:normal">(Acceptance: 472/1698 ≈ 27.8%) </span></span></p>
-            <p class="resources">
-              [
-                <a href="https://dl.acm.org/doi/10.1145/3394171.3413754">paper</a> /
-                <a href="https://github.com/YoungJoongUNC/human_video_novel_view_synthesis">dataset</a>
-              ]
-            </p>
-          </div>
-        </li>
-
-       <li>
-<!--             <div class="img">
-              <img src="/papers/images/2020.eccv.nvs.png" class="img-responsive" alt="">
-            </div> -->
-          <div class="description">
-            <p class="authors">Rotationally-Temporally Consistent Novel-View Synthesis of Human Performance Video</p>
-            <p class="authors"><span style="color:#626567">Youngjoong Kwon, Stefano Petrangeli, <b>Dahun Kim</b>, Haoliang Wang, Eunbyung Park, Vishy Swaminathan, Henry Fuchs</span></p>
-            <p class="venue"><span style="color:#626567">ECCV 2020 <span style="font-weight:normal;color:#BB2222">Spotlight presentation</span> <span style="font-weight:normal">(Acceptance: 265/5025 ≈ 5.3%)</span></span> </p>
-            <p class="resources">
-              [
-                <a href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123490375.pdf">paper</a> /
-                <a href="https://github.com/YoungJoongUNC/human_video_novel_view_synthesis">dataset</a> /
-                <a href="https://github.com/YoungJoongUNC/human_video_novel_view_synthesis">code</a> 
-              ]
-            </p>
-          </div>
-        </li>
-
-    
-     
+  <!-- text -->
+  <div style="flex:1;">
+    <p class="authors"><b>OCR-based Inventory Management Algorithms Robust to Damaged Images</b></p>
+    <p class="authors" style="color:#626567">
+      <b>Minseok Seo</b>, Daehan Kim, Hyeyoon Kang, Donghyeon Cho, Dong-Geol Choi
+    </p>
+    <p class="venue" style="color:#626567">ICRA 2021</p>
+    <p class="resources">
+      [
+      <a href="https://ieeexplore.ieee.org/abstract/document/9561280">paper</a> /
+      <a href="https://github.com/...">code</a>
+      ]
+    </p>
+  </div>
+</li>
+          
         </ul>      
     </div>  
 </div>
     </div>
-  </section>
 
+<section id="collaboration" class="home-section wg-blank" style="padding: 20px 0 20px 0;">
+  <div class="container">
 
-
-<section id="interns" class="home-section wg-blank   " style="padding: 20px 0 20px 0;" >
-    <div class="container">
-
-<div class="row">  
-    <div class="col-lg-12">
-      <h1>Interns whom I had the pleasure to work with</h1>      
-<ul>
-
-  <li>Shijiw Wang in Winter 2023, Ph.D. student at Brown University. <br> 
-  hosted with Weicheng Kuo</li>
-
-  <li>Runze Li in Summer 2022. Finished Ph.D. at UC Riverside. Now at Google. <br> 
-  hosted with Weicheng Kuo</li>
-
-  <li>Inkyu Shin in Summer 2022, Finished Ph.D. at KAIST. Now at TikTok Research. <br> 
-  hosted with Liang-Chieh Chen and Jun Xie</li>
-
-  </ul>
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>Research Collaboration</h1>
+      </div>
     </div>
-</div>
+
+    <!-- Logo row -->
+    <div class="row justify-content-center" style="margin-top: 20px;">
+
+      <div class="col-4 col-md-2 text-center">
+        <img src="/papers/logos/1.svg" class="img-fluid" style="max-height:60px;">
+      </div>
+
+      <div class="col-4 col-md-2 text-center">
+        <img src="/papers/logos/2.svg.png" class="img-fluid" style="max-height:60px;">
+      </div>
+
+      <div class="col-4 col-md-2 text-center">
+        <img src="/papers/logos/3.png" class="img-fluid" style="max-height:60px;">
+      </div>
+
+      <div class="col-4 col-md-2 text-center">
+        <img src="/papers/logos/4.svg.png" class="img-fluid" style="max-height:60px;">
+      </div>
+
+      <div class="col-4 col-md-2 text-center">
+        <img src="/papers/logos/5.png" class="img-fluid" style="max-height:60px;">
+      </div>
+
+      <div class="col-4 col-md-2 text-center">
+        <img src="/papers/logos/6.svg.png" class="img-fluid" style="max-height:60px;">
+      </div>
+
     </div>
-  </section>
 
+  </div>
+</section>
 
-                  
-
-<section id="awards" class="home-section wg-blank   " style="padding: 20px 0 20px 0;" >
-    <div class="container">
-
-<div class="row">  
-    <div class="col-lg-12">
-      <h1>Awards &amp; Honors</h1>      
-      <!-- <h2 id="ms-students">MS students</h2> -->
-<ul>
-<li>NSF travel award for Doctoral Consortium, CVPR 2022</li>
-<li>Best Ph.D. Thesis Award, EE, KAIST, 2022</li>
-<li>Bronze Prize, 28th HumanTech Paper Award, Samsung Electronics Co., Ltd. 2022 ($5,000)</li>
-<li>Qualcomm Innovation Award ($4,000), 2021</li>
-<li>Outstanding Reviewer Award, IEEE Conference on Computer Vision and Pattern Recognition, 2021</li>
-<li>Bronze Prize, 27th HumanTech Paper Award, Samsung Electronics Co., Ltd. 2021 ($5,000)</li>
-<li>Outstanding Reviewer Award, European Conference on Computer Vision, 2020</li>
-<li>KAIST-Samsung Industry-University Cooperation Best Paper Award ($3,000), 2020</li>
-<li>Microsoft Research Asia (MSRA) Ph.D. Fellowship 2019 Winner ($10,000)</li>
-<li>Global Ph.D. Fellowship, National Research Foundation of Korea ($60,000 + 3-year full scholarship)</li>
-<li>1st Place Award in ChaLearn LAP 2018 Inpainting Challenge Track2 - Video Decaptioning (ECCV 2018 challenge)</li>
-<li>Honorable Mention, 25th HumanTech Paper Award, Samsung Electronics Co., Ltd. 2019 ($2,000)</li>
-<li>International Computer Vision Summer School (ICVSS) 2018, Sicily, Italy</li>
-</ul>
-    </div>
-</div>
-    </div>
-  </section>
-
-
-<section id="awards" class="home-section wg-blank   " style="padding: 20px 0 20px 0;" >
-    <div class="container">
-
-<div class="row">  
-    <div class="col-lg-12">
-      <h1>US Patents</h1>      
-      <!-- <h2 id="ms-students">MS students</h2> -->
-<ul>
-<li>Video Panoptic Segmentation (issued, 11,640,714)</li>
-<li>Panoptic Segmentation (issued, 11,256,960)</li>
-<li>Electronic device for key frame analysis and control method thereof (issued, 12,175,369)</li>
-<li>Methods and apparatus localizing object (s) in vision data (pending, 18,289,725)</li>
-<li>Electronic Device and Control Method of Same (pending, 17/554,142)</li>
-<li>Method and Device for Hierarchical Learning of Neural Network Based on Weakly Supervised Learning (pending, 16/758,089)</li>
-</ul>
-    </div>
-</div>
-    </div>
-  </section>
 
   
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -1222,5 +1259,3 @@
 
 </body>
 </html>
-
-
