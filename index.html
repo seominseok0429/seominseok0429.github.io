@@ -48,6 +48,260 @@
 </script>
   <title>Minseok Seo</title>
 
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #667085;
+      --line: #e6eaf0;
+      --paper: #ffffff;
+      --wash: #f6f8fb;
+      --accent: #2357d9;
+      --accent-soft: #edf3ff;
+    }
+
+    body {
+      color: var(--ink);
+      line-height: 1.7;
+    }
+
+    .navbar-brand,
+    h1,
+    h2,
+    h3 {
+      letter-spacing: -0.025em;
+    }
+
+    .research-note {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(28px, 5vw, 56px);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: linear-gradient(145deg, #fff 10%, #f2f6ff 100%);
+      box-shadow: 0 18px 50px rgba(23, 32, 51, 0.07);
+    }
+
+    .research-note::after {
+      position: absolute;
+      top: -80px;
+      right: -80px;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: rgba(35, 87, 217, 0.07);
+      content: "";
+    }
+
+    .research-note__eyebrow,
+    .section-eyebrow {
+      margin-bottom: 8px;
+      color: var(--accent);
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .research-note h1 {
+      max-width: 760px;
+      margin: 0 0 20px;
+      font-size: clamp(2rem, 5vw, 3.35rem);
+      line-height: 1.08;
+    }
+
+    .research-note__lead {
+      max-width: 780px;
+      margin-bottom: 16px;
+      color: #364152;
+      font-size: clamp(1.02rem, 2vw, 1.22rem);
+    }
+
+    .research-note__steps {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .research-note__step {
+      padding: 18px;
+      border: 1px solid rgba(35, 87, 217, 0.12);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.78);
+    }
+
+    .research-note__step span {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--accent);
+      font-family: "Roboto Mono", monospace;
+      font-size: 0.75rem;
+    }
+
+    .research-note__step strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 0.96rem;
+    }
+
+    .research-note__step p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.55;
+    }
+
+    .perspectives-intro {
+      display: flex;
+      gap: 28px;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 28px 0 6px;
+    }
+
+    .perspectives-intro h2 {
+      margin: 0 0 8px;
+    }
+
+    .perspectives-intro p {
+      max-width: 720px;
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .perspectives-intro__note {
+      flex: 0 0 230px;
+      padding: 12px 15px;
+      border-left: 3px solid var(--accent);
+      background: var(--accent-soft);
+      color: #38507a;
+      font-size: 0.78rem;
+      line-height: 1.55;
+    }
+
+    #papers .col-lg-12 > h1 {
+      margin-bottom: 24px;
+      font-size: clamp(2rem, 4vw, 2.7rem);
+    }
+
+    #papers .ul-papers {
+      width: 100%;
+      padding: 0;
+    }
+
+    #papers .row {
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    #papers .ul-papers > hr {
+      margin: 42px 0 20px;
+      border-color: var(--line);
+    }
+
+    #papers .ul-papers > h2 {
+      margin-bottom: 16px;
+      color: #25314a;
+      font-size: 1.25rem;
+    }
+
+    #papers .ul-papers > li {
+      display: grid !important;
+      grid-template-columns: 220px minmax(0, 1fr);
+      gap: 24px !important;
+      margin-bottom: 18px;
+      padding: 20px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--paper);
+      transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+    }
+
+    #papers .ul-papers > li:hover {
+      transform: translateY(-2px);
+      border-color: #cdd7ed;
+      box-shadow: 0 12px 28px rgba(23, 32, 51, 0.07);
+    }
+
+    #papers .ul-papers > li > img {
+      width: 100% !important;
+      max-width: none !important;
+      aspect-ratio: 16 / 10;
+      border: 1px solid #edf0f4;
+      border-radius: 9px !important;
+      object-fit: contain;
+      background: var(--wash);
+    }
+
+    #papers .authors,
+    #papers .venue,
+    #papers .resources {
+      margin-bottom: 6px;
+    }
+
+    #papers .authors:first-child {
+      margin-bottom: 9px;
+      font-size: 1.06rem;
+      line-height: 1.45;
+    }
+
+    #papers .resources a {
+      font-weight: 600;
+    }
+
+    .perspective-panel {
+      margin-top: 14px;
+      border: 1px solid #dce4f3;
+      border-radius: 10px;
+      background: #f9fbff;
+    }
+
+    .perspective-panel summary {
+      padding: 11px 14px;
+      color: #294a90;
+      font-size: 0.86rem;
+      font-weight: 700;
+      cursor: pointer;
+      list-style-position: inside;
+    }
+
+    .perspective-panel__body {
+      padding: 0 14px 13px;
+      color: var(--muted);
+      font-size: 0.84rem;
+      line-height: 1.55;
+    }
+
+    .perspective-panel__body p {
+      margin: 0;
+    }
+
+    @media (max-width: 767px) {
+      .research-note__steps {
+        grid-template-columns: 1fr;
+      }
+
+      .perspectives-intro {
+        display: block;
+      }
+
+      .perspectives-intro__note {
+        margin-top: 18px;
+      }
+
+      #papers .ul-papers > li {
+        grid-template-columns: 1fr;
+        gap: 16px !important;
+        padding: 16px;
+      }
+
+      #papers .ul-papers > li > img {
+        aspect-ratio: 16 / 9;
+      }
+    }
+  </style>
+
 </head>
 
 <body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" >
@@ -84,7 +338,7 @@
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
   <div class="container">
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/">Minseok seo</a>
+      <a class="navbar-brand" href="/">Minseok Seo</a>
     </div>
     
     <button type="button" class="navbar-toggler" data-toggle="collapse"
@@ -104,6 +358,10 @@
 
         <li class="nav-item">
           <a class="nav-link " href="/#papers" data-target="#papers"><span>Publications</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#open-review" data-target="#open-review"><span>Open Review</span></a>
         </li>
 
         <li class="nav-item">
@@ -141,7 +399,7 @@
     <div id="profile">
       <img class="avatar avatar-circle" src="/authors/admin/profile.jpg" alt="Avatar">
       <div class="portrait-title">
-        <h2>Minseok seo</h2>
+        <h2>Minseok Seo</h2>
 <!--         <h3>Research Scientist</h3> -->
         
         <h3>
@@ -154,7 +412,7 @@
       
       <td>
       <br>
-      <a href="-"><b>CV</b></a>
+      <a href="/cv/CV_2025.pdf"><b>CV</b></a>
         | <a href="https://scholar.google.com/citations?user=nE_gu68AAAAJ&hl=ko"><b>Google Scholar</b></a>
         | <a href="https://github.com/seominseok0429"><b>Github</b></a>
       <br>
@@ -292,6 +550,57 @@
     </div>
   </section>
 
+  <section id="open-review" class="home-section wg-blank" style="padding: 36px 0 12px 0;">
+    <div class="container">
+      <div class="research-note">
+        <p class="research-note__eyebrow">An open research note</p>
+        <h1>Research should invite conversation, not just accumulate citations.</h1>
+        <p class="research-note__lead">
+          AI papers are appearing faster than ever, and AI-generated reviews are becoming part of the process.
+          I believe the most useful response is not simply more volume, but more visible, thoughtful human dialogue.
+        </p>
+        <p class="research-note__lead">
+          For my new work, I plan to share an archival version openly, invite a small number of researchers whose
+          judgment I deeply respect to read it, and publish their perspectives alongside the paper—with their
+          permission, in their own words, and without editing away disagreement.
+        </p>
+
+        <div class="research-note__steps" aria-label="My open review process">
+          <div class="research-note__step">
+            <span>01</span>
+            <strong>Archive openly</strong>
+            <p>Make the work, evidence, and limitations accessible to everyone.</p>
+          </div>
+          <div class="research-note__step">
+            <span>02</span>
+            <strong>Invite trusted readers</strong>
+            <p>Ask people whose taste and judgment I respect for candid feedback.</p>
+          </div>
+          <div class="research-note__step">
+            <span>03</span>
+            <strong>Publish the dialogue</strong>
+            <p>Share their perspectives so readers can evaluate the work with richer context.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="perspectives-intro">
+        <div>
+          <p class="section-eyebrow">Reviews alongside the work</p>
+          <h2>Trusted Perspectives</h2>
+          <p>
+            Selected archival papers below include invited perspectives from researchers I admire. These notes may
+            support, question, or challenge the work; that independence is the point.
+          </p>
+        </div>
+        <div class="perspectives-intro__note">
+          These are invited personal perspectives, published with permission. They are not anonymous or
+          institutional peer review.
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="papers" class="home-section wg-papers   " style="padding: 20px 0 20px 0;" >
     <div class="container">
       
@@ -329,6 +638,12 @@
       <a href="-">code</a>
       ]
     </p>
+    <details class="perspective-panel">
+      <summary>Trusted Perspectives · invitations in progress</summary>
+      <div class="perspective-panel__body">
+        <p>Invited reviews will appear here with each reviewer's name, affiliation, date, and permission.</p>
+      </div>
+    </details>
   </div>
 </li>         
           
@@ -356,6 +671,12 @@
       <a href="-">code</a>
       ]
     </p>
+    <details class="perspective-panel">
+      <summary>Trusted Perspectives · invitations in progress</summary>
+      <div class="perspective-panel__body">
+        <p>Invited reviews will appear here with each reviewer's name, affiliation, date, and permission.</p>
+      </div>
+    </details>
   </div>
 </li>
           
@@ -376,7 +697,7 @@
     <p class="authors" style="color:#626567">
       <b>Minseok Seo</b>, Mark Hamilton, Changick Kim 
     </p>
-    <p class="venue" style="color:#626567">CVPR 2026 <span style="font-weight:normal; color:#BB2222">(Comute Gold Star / Transparency Champion)</span> </p>
+    <p class="venue" style="color:#626567">CVPR 2026 <span style="font-weight:normal; color:#BB2222">(Compute Gold Star / Transparency Champion)</span> </p>
     <p class="resources">
       [
       <a href="https://arxiv.org/abs/2511.16301">paper</a> /
@@ -938,5 +1259,3 @@
 
 </body>
 </html>
-
-
