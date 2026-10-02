@@ -301,29 +301,6 @@
       }
     }
 
-    /* Research notebook: category landing area, ready for future posts. */
-    #blog { padding: 72px 0; background: #f7f6f2; scroll-margin-top: 75px; }
-    #blog .blog-heading { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 30px; }
-    #blog .blog-kicker { color: #685444; font-size: .72rem; font-weight: 700; letter-spacing: .15em; margin: 0 0 12px; }
-    #blog h2 { color: #172033; font-size: clamp(2.2rem, 5vw, 3.4rem); line-height: 1.1; margin: 0 0 16px; }
-    #blog .blog-intro { color: #5b6472; font-size: .95rem; margin: 0; word-break: keep-all; overflow-wrap: anywhere; }
-    #blog .blog-note { flex-shrink: 0; padding: 8px 14px; border: 1px solid #dad8d0; border-radius: 30px; color: #685444; font-size: .72rem; }
-    #blog .blog-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
-    #blog .blog-card { --category: #315dc3; --tint: #edf2ff; display: flex; flex-direction: column; padding: 28px; background: #fff; border: 1px solid #e3e1db; border-radius: 18px; overflow: hidden; box-shadow: 0 4px 16px rgba(23,32,51,.025); }
-    #blog .blog-card--tech { --category: #20735e; --tint: #eaf5f0; }
-    #blog .blog-card--ideas { --category: #9b531e; --tint: #fff1df; }
-    #blog .blog-card-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 32px; }
-    #blog .blog-icon { display: grid; place-items: center; width: 48px; height: 48px; border-radius: 14px; background: var(--tint); color: var(--category); }
-    #blog .blog-icon svg { width: 25px; height: 25px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
-    #blog .blog-index { color: #858b95; font-size: .73rem; letter-spacing: .08em; }
-    #blog .blog-category { color: var(--category); font-size: .68rem; font-weight: 700; letter-spacing: .12em; margin: 0 0 10px; }
-    #blog h3 { font-size: 1.25rem; line-height: 1.55; color: #172033; margin: 0 0 14px; word-break: keep-all; overflow-wrap: anywhere; }
-    #blog .blog-description { color: #5b6472; font-size: .86rem; line-height: 1.85; margin: 0 0 28px; word-break: keep-all; overflow-wrap: anywhere; }
-    #blog .blog-empty { display: flex; align-items: center; gap: 8px; margin-top: auto; padding-top: 18px; border-top: 1px solid #eeece7; font-size: .75rem; color: #727986; }
-    #blog .blog-empty::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--category); }
-    #blog .blog-footer { margin: 22px 0 0; color: #727986; font-size: .78rem; text-align: right; word-break: keep-all; }
-    @media (max-width: 991px) { #blog .blog-grid { gap: 14px; } #blog .blog-card { padding: 22px; } }
-    @media (max-width: 767px) { #blog { padding: 48px 0; } #blog .blog-heading { display: block; } #blog .blog-note { display: inline-block; margin-top: 18px; } #blog .blog-grid { grid-template-columns: 1fr; } #blog .blog-card-top { margin-bottom: 22px; } #blog .blog-footer { text-align: left; } }
   </style>
 
 </head>
@@ -385,7 +362,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="/#blog" data-target="#blog"><span>Blog</span></a>
+          <a class="nav-link" href="/blog/"><span>Blog</span></a>
         </li>
 
         <li class="nav-item">
@@ -1125,51 +1102,7 @@
 
 </section>
 
-<section id="blog" class="home-section wg-blank" aria-labelledby="blog-title" lang="ko">
-  <div class="container">
-    <div class="blog-heading">
-      <div>
-        <p class="blog-kicker">MINSEOK'S RESEARCH NOTEBOOK</p>
-        <h2 id="blog-title">Beyond the paper.</h2>
-        <p class="blog-intro">읽은 논문, 써본 기술, 그리고 아직 논문이 되지 않은 생각들.</p>
-      </div>
-      <span class="blog-note">Blog · 이제 시작합니다</span>
-    </div>
-    <div class="blog-grid">
-      <article class="blog-card" aria-labelledby="blog-reviews-title">
-        <div class="blog-card-top">
-          <span class="blog-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v15M12 5C9 3 5 3 2 4v15c3-1 7-1 10 1 3-2 7-2 10-1V4c-3-1-7-1-10 1Z"/><path d="M5 8h3M5 11h3M16 8h3M16 11h3"/></svg></span>
-          <span class="blog-index" aria-hidden="true">01</span>
-        </div>
-        <p class="blog-category" lang="en">PAPER REVIEWS</p>
-        <h3 id="blog-reviews-title">논문리뷰</h3>
-        <p class="blog-description">인상 깊게 읽은 논문의 핵심 아이디어와, 읽으면서 생긴 질문을 기록합니다.</p>
-        <div class="blog-empty">아직 글이 없어요 · 첫 리뷰 준비 중</div>
-      </article>
-      <article class="blog-card blog-card--tech" aria-labelledby="blog-tech-title">
-        <div class="blog-card-top">
-          <span class="blog-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="18" rx="3"/><path d="M2 8h20M6 5.5h.01M9 5.5h.01M7 12l3 3-3 3M13 18h4"/></svg></span>
-          <span class="blog-index" aria-hidden="true">02</span>
-        </div>
-        <p class="blog-category" lang="en">TECH NOTES</p>
-        <h3 id="blog-tech-title">기술소개</h3>
-        <p class="blog-description">연구하며 만난 유용한 기술과 구현 방법. 직접 써보고 이해한 내용을 나눕니다.</p>
-        <div class="blog-empty">아직 글이 없어요 · 첫 노트 준비 중</div>
-      </article>
-      <article class="blog-card blog-card--ideas" aria-labelledby="blog-ideas-title">
-        <div class="blog-card-top">
-          <span class="blog-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 16c0-3-3-3-3-7a7 7 0 0 1 14 0c0 4-3 4-3 7M8 17h8M9 20h6M10 23h4M12 1v2M9 9l3 3 3-3M12 12v5"/></svg></span>
-          <span class="blog-index" aria-hidden="true">03</span>
-        </div>
-        <p class="blog-category" lang="en">SMALL EXPERIMENTS, OPEN QUESTIONS</p>
-        <h3 id="blog-ideas-title">논문으로 제출하긴 애매하지만 신기한 아이디어</h3>
-        <p class="blog-description">작은 실험, 뜻밖의 결과, 조금 엉뚱한 가설. 논문으로 다듬기 전의 호기심을 남깁니다.</p>
-        <div class="blog-empty">아직 글이 없어요 · 첫 아이디어 준비 중</div>
-      </article>
-    </div>
-    <p class="blog-footer">완성된 결론이 아니어도, 기록할 만한 생각은 있으니까.</p>
-  </div>
-</section>
+
 
 <section id="collaboration" class="home-section wg-blank" style="padding: 20px 0 20px 0;">
   <div class="container">
