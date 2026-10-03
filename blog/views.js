@@ -11,6 +11,8 @@
   tracker.dataset.goatcounter = `${origin}/count`;
   tracker.async = true;
   document.head.appendChild(tracker);
+  // Preserve an explicitly configured display count while still recording visits.
+  if (display.hasAttribute('data-fixed-views')) return;
 
   const interval = 5 * 60 * 1000;
   let lastAttempt = 0;
