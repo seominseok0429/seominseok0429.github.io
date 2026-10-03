@@ -19,7 +19,7 @@
     .then(data => {
       if (typeof data.count !== 'string' || !/^[0-9,.\s]+$/.test(data.count)) return;
       display.textContent = `조회수 ${data.count}`;
-      display.title = '조회수는 주기적으로 갱신됩니다.';
+      display.title = 'GoatCounter 실제 방문 집계 · 표시 갱신에 최대 4시간이 걸릴 수 있습니다.';
       display.hidden = false;
     })
     .catch(() => { display.hidden = true; });
