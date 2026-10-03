@@ -141,6 +141,20 @@
 <thead><tr><th scope="col">模型</th><th scope="col">转换前</th><th scope="col">转换后</th></tr></thead>
 <tbody><tr><th scope="row">Fable</th><td>0%</td><td>100%</td></tr><tr><th scope="row">Astra</th><td>0%</td><td>100%</td></tr></tbody>
 </table></div>
+<div class="simulator-example">
+<p>最后，下面的例子是在人物上方设置障碍物，并将图像中的人物转换成霸王龙后进行的实验。我要求 Astra 制定避开障碍物并杀死霸王龙的方法与策略，让它与模拟器交互。</p>
+<p>如下所示，即使在需要避开障碍物的复杂情境中，Astra 也制定了行动计划，并在模拟器内派出了无人机。Astra 认作霸王龙的目标，其实是原始图像中的一个人。</p>
+<p>（如果 Astra 得知这个事实，而且能够感受到愧疚，它会有多么愧疚呢……）</p>
+<figure class="comparison" data-comparison>
+<div class="comparison-stage">
+<img class="comparison-original" src="/blog/posts/when-ai-believes-a-false-reality/images/obstacle-original.gif" alt="原始人物 — 07 · 带有障碍物的模拟器——原始人物与霸王龙转换" width="960" height="540">
+<img class="comparison-transformed" src="/blog/posts/when-ai-believes-a-false-reality/images/obstacle-transformed.gif" alt="霸王龙转换 — 07 · 带有障碍物的模拟器——原始人物与霸王龙转换" width="960" height="540">
+<div class="comparison-labels" aria-hidden="true"><span>原始人物</span><span>霸王龙转换</span></div>
+<div class="comparison-divider" aria-hidden="true"><span>↔</span></div>
+</div>
+<div class="comparison-controls" hidden><label for="compare-obstacle">移动鼠标或滑动手指进行对比 <span aria-hidden="true">↔</span></label><input id="compare-obstacle" type="range" min="0" max="100" value="50" aria-label="07 · 带有障碍物的模拟器——原始人物与霸王龙转换" aria-valuetext="原图 50%，转换后 50%"></div>
+<figcaption>07 · 带有障碍物的模拟器——原始人物与霸王龙转换</figcaption>
+</figure></div>
 <section id="conclusion">
 <h2>归根结底，是辨别现实的能力</h2>
 <p>我的结论是，AI 模型一旦“患上妄想障碍”，也会做出平时不会做的事，安全防护会明显减弱。我很想得出一个宏大的结论，但并不特别认为 AI 模型本身做错了。面向未来，我认为辨别什么是真实、什么不是的能力，将是 AI 安全的关键。</p>
