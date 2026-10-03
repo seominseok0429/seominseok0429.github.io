@@ -5,7 +5,9 @@ document.querySelectorAll('[data-comparison]').forEach(figure => {
   const update = value => {
     const position = Math.max(0, Math.min(100, Math.round(value)));
     input.value = position;
-    input.setAttribute('aria-valuetext', `원본 ${position}%, 변환 ${100 - position}%`);
+    const lang = document.documentElement.lang;
+    const labels = lang === 'en' ? ['Original', 'transformed'] : lang === 'zh-CN' ? ['原图', '转换后'] : ['원본', '변환'];
+    input.setAttribute('aria-valuetext', `${labels[0]} ${position}%, ${labels[1]} ${100 - position}%`);
     stage.style.setProperty('--position', `${position}%`);
   };
   figure.classList.add('is-interactive');
