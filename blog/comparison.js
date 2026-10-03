@@ -16,6 +16,12 @@ document.querySelectorAll('[data-comparison]').forEach(figure => {
     const rect = stage.getBoundingClientRect();
     update((event.clientX - rect.left) / rect.width * 100);
   };
+  // Native image dragging otherwise interrupts pointer movement in browsers.
+  stage.querySelectorAll('img').forEach(image => { image.draggable = false; });
+  stage.addEventListener('dragstart', event => event.preventDefault());
+  stage.addEventListener('pointerenter', event => {
+    if (event.pointerType === 'mouse') move(event);
+  });
   stage.addEventListener('pointerdown', event => {
     if (event.button !== 0) return;
     stage.setPointerCapture(event.pointerId);
@@ -23,7 +29,7 @@ document.querySelectorAll('[data-comparison]').forEach(figure => {
     move(event);
   });
   stage.addEventListener('pointermove', event => {
-    if (stage.hasPointerCapture(event.pointerId)) move(event);
+    if (event.pointerType === 'mouse' || stage.hasPointerCapture(event.pointerId)) move(event);
   });
   const release = event => {
     if (stage.hasPointerCapture(event.pointerId)) stage.releasePointerCapture(event.pointerId);
