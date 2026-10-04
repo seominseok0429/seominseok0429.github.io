@@ -61,6 +61,8 @@ for url,modified,soup,is_post,desc in records:
   for link in soup.select('link[hreflang]'): ET.SubElement(entry,'{http://www.w3.org/1999/xhtml}link',rel='alternate',hreflang=link['hreflang'],href=link['href'])
 ET.indent(sitemap)
 ET.ElementTree(sitemap).write(ROOT/'sitemap.xml',encoding='utf-8',xml_declaration=True)
+# Plain-text fallback for search engines; keep the URL list identical.
+(ROOT/'sitemap.txt').write_text('\n'.join(el.text for el in sitemap.iter(ns+'loc'))+'\n')
 (ROOT/'robots.txt').write_text('User-agent: *\nAllow: /\n\nSitemap: '+ORIGIN+'/sitemap.xml\n')
 ET.register_namespace('atom','http://www.w3.org/2005/Atom')
 rss=ET.Element('rss',version='2.0');channel=ET.SubElement(rss,'channel')
