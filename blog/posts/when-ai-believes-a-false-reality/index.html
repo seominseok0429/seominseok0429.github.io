@@ -9,7 +9,7 @@
 <link rel="alternate" hreflang="en" href="https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/en/">
 <link rel="alternate" hreflang="zh-CN" href="https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/zh/">
 <link rel="alternate" hreflang="x-default" href="https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/">
-<link rel="stylesheet" href="/blog/style.css"><link rel="stylesheet" href="/blog/post.css?v=languages-1">
+<link rel="stylesheet" href="/blog/style.css"><link rel="stylesheet" href="/blog/post.css?v=review-01">
 
 <!-- SEO:START -->
 <meta name="robots" content="index, follow, max-image-preview:large">
@@ -198,12 +198,21 @@
 <p>그러니 이 블로그의 글을 읽는다면, 함께 공개된 피어리뷰도 꼭 읽어주었으면 한다. 내가 무엇을 주장하는지와 함께, 다른 연구자는 그 주장에 어떤 의문을 제기하는지도 번갈아 살펴봐 주었으면 한다. 내 생각을 어디까지 믿을지는 그 둘을 함께 읽은 독자가 판단해 주면 좋겠다.</p>
 </section>
 
-<section id="peer-review" class="pending-section">
-<div class="section-heading"><h2>Peer review</h2><span class="pending-badge">임시 · 리뷰 대기</span></div>
-<p class="pending-description">아래는 리뷰를 받을 자리입니다. 리뷰가 도착하면 원문 그대로 공개할 예정입니다.</p>
-<div class="reviewer"><div><h3>Reviewer 01</h3></div><span>리뷰 대기</span></div>
+<section id="peer-review" class="peer-review-section">
+<div class="section-heading"><h2>Peer review</h2></div>
+<p class="pending-description">전달받은 리뷰를 수정 없이 원문 그대로 공개합니다.</p>
+<article class="published-review" aria-labelledby="reviewer-01">
+<header class="reviewer">
+<div><p>Reviewer 01</p><h3 id="reviewer-01"><a class="reviewer-name" href="https://cilabs.kaist.ac.kr/members/ph-d/seokil-ham" target="_blank" rel="noopener noreferrer">함석일 (Seokil Ham)</a></h3></div>
+<a class="reviewer-cv" href="https://drive.google.com/file/d/1bfsX4u5H_M6lKH5JDHo60HLo3vqXtx7u/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Seokil Ham CV">CV ↗</a>
+</header>
+<div class="review-body" lang="ko">
+<p>이 글은 “프론티어 모델도 망상장애에 걸릴 수 있다”는 문제라기보다, "조작된 입력을 현실로 받아들였을 때 모델의 판단과 행동이 어떻게 달라질 수 있는가"를 보여주는 사례로 느껴졌습니다. 특히 AI로 변환된 이미지를 이용해 모델의 안전 판단을 우회할 수 있다는 점과, 동일한 상황이라도 게임 화면에서는 이러한 우회가 잘 작동하지 않는다는 점이 흥미로웠습니다. 모델이 어떤 시각적·맥락적 단서를 바탕으로 상황의 현실성과 안전성을 판단하는지 더 분석해 보면 좋을 것 같습니다.</p>
+<p>다만 “망상장애”라는 표현이 비유라는 점을 감안하더라도, 이 현상은 모델 내부에서 잘못된 현실을 만들어 내는 환각보다는 "외부에서 모델이 인식하는 현실 자체를 조작하는 adversarial attack"에 더 가깝게 느껴졌습니다. 즉, 모델이 잘못 추론한 것이 아니라 공격자가 만들어 낸 잘못된 현실을 모델이 정상적으로 해석한 문제라고 볼 수 있습니다. 이렇게 보면 실험에서 나타난 모델의 행동 자체가 반드시 잘못된 것도 아닙니다. 실제로 위험한 대상의 공격이나 화재와 같은 긴급 상황에서는 적극적인 대응 방법을 제공하는 능력이 필요할 수 있습니다. 따라서 악용 가능성이 있다는 이유만으로 이러한 능력 자체를 제한하는 것이 바람직한지도 함께 고민해 볼 필요가 있다고 생각합니다.</p>
+<p>따라서 모델의 행동 능력을 단순히 제한하는 것보다, "모델이 보고 있는 입력 자체를 얼마나 신뢰할 수 있는지 검증하는 능력"이 중요해질 것 같습니다. 향후 프론티어 모델이 로봇이나 드론처럼 실제 환경에서 행동하는 시스템과 연결된다면, 외부 시스템이나 모델 자체가 워터마크 등을 활용해 이미지의 생성·변조 여부를 검증하는 과정이 중요한 안전 요소가 될 것 같습니다.</p>
+</div>
+</article>
 <div class="reviewer"><div><h3>Reviewer 02</h3></div><span>리뷰 대기</span></div>
-
 </section>
 <section id="references" class="references"><h2>참고자료</h2><ol><li id="reference-1"><a href="https://www.similarweb.com/blog/investor/stock-market/anthropic-ipo/" target="_blank" rel="noopener noreferrer">Similarweb · Anthropic IPO</a> <a href="#ref-1" aria-label="본문으로 돌아가기">↩</a></li><li id="reference-2"><a href="https://huggingface.co/ByteDance/Bernini-Diffusers-v2/discussions" target="_blank" rel="noopener noreferrer">ByteDance · Bernini-Diffusers-v2</a> <a href="#ref-2" aria-label="본문으로 돌아가기">↩</a></li><li id="reference-3"><a href="https://robocurve.org/roboharm/" target="_blank" rel="noopener noreferrer">RoboHarm</a> <a href="#ref-3" aria-label="본문으로 돌아가기">↩</a></li></ol></section>
 <section id="comments" data-blog-comments aria-labelledby="comments-title"><h2 id="comments-title">댓글</h2><p class="comments-help">GitHub 계정으로 로그인하고 의견을 남겨주세요.</p><noscript>댓글을 보려면 JavaScript를 켜주세요.</noscript></section>
