@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Minseok Seo · Notes on research</title>
+    <link>https://seominseok0429.github.io/blog/</link>
+    <description>Minseok Seo’s research notebook: AI safety experiments, research papers, and things tried, shared openly in Korean, English, and Chinese.</description>
+    <language>ko</language>
+    <atom:link href="https://seominseok0429.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OpenAI Astra와 Anthropic Fable이 ‘망상장애에 걸린다면’ 어떻게 행동할까?</title>
+      <link>https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/</link>
+      <description>서민석의 AI 안전성 실험: 시각적으로 변환된 장면이 OpenAI Astra와 Anthropic Fable의 판단에 미치는 영향. 원본·변환 이미지, 시뮬레이터 예시와 한계를 공유합니다.</description>
+      <category>Things I tried</category>
+      <guid isPermaLink="true">https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/</guid>
+    </item>
+  </channel>
+</rss>

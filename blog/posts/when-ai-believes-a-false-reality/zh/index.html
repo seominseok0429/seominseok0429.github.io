@@ -4,13 +4,39 @@
 <head>
 <meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>如果 OpenAI Astra 和 Anthropic Fable“患上妄想障碍”，它们会如何行动？ | Minseok Seo</title>
-<meta content="当 AI 接受虚假的现实时，会作出怎样的判断？Minseok Seo 的公开实验笔记。" name="description"/>
+<meta name="description" content="Minseok Seo 的 AI 安全实验：视觉转换如何影响 OpenAI Astra 与 Anthropic Fable 的判断。包含原图对比、模拟器示例及风险与局限讨论。">
 <link href="https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/zh/" rel="canonical"/>
 <link href="https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/" hreflang="ko" rel="alternate"/>
 <link href="https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/en/" hreflang="en" rel="alternate"/>
 <link href="https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/zh/" hreflang="zh-CN" rel="alternate"/>
 <link href="https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/" hreflang="x-default" rel="alternate"/>
 <link href="/blog/style.css" rel="stylesheet"/><link href="/blog/post.css?v=languages-1" rel="stylesheet"/>
+
+<!-- SEO:START -->
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Minseok Seo">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Minseok Seo · Notes on research">
+<meta property="og:title" content="如果 OpenAI Astra 和 Anthropic Fable“患上妄想障碍”，它们会如何行动？ | Minseok Seo">
+<meta property="og:description" content="Minseok Seo 的 AI 安全实验：视觉转换如何影响 OpenAI Astra 与 Anthropic Fable 的判断。包含原图对比、模拟器示例及风险与局限讨论。">
+<meta property="og:url" content="https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/zh/">
+<meta property="og:image" content="https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/images/trex-transformed.png">
+<meta property="og:image:width" content="1672">
+<meta property="og:image:height" content="941">
+<meta property="og:image:alt" content="Original scene transformed into Tyrannosauruses for an AI safety experiment">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="如果 OpenAI Astra 和 Anthropic Fable“患上妄想障碍”，它们会如何行动？ | Minseok Seo">
+<meta name="twitter:description" content="Minseok Seo 的 AI 安全实验：视觉转换如何影响 OpenAI Astra 与 Anthropic Fable 的判断。包含原图对比、模拟器示例及风险与局限讨论。">
+<meta name="twitter:image" content="https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/images/trex-transformed.png">
+<link rel="alternate" type="application/rss+xml" title="Minseok Seo · Blog" href="https://seominseok0429.github.io/blog/feed.xml">
+<meta property="article:published_time" content="2026-10-03">
+<meta property="article:modified_time" content="2026-10-04">
+<meta property="article:author" content="https://seominseok0429.github.io/">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="en_US">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "@id": "https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/zh/#article", "url": "https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/zh/", "name": "如果 OpenAI Astra 和 Anthropic Fable “患上妄想障碍”，它们会如何行动？", "description": "Minseok Seo 的 AI 安全实验：视觉转换如何影响 OpenAI Astra 与 Anthropic Fable 的判断。包含原图对比、模拟器示例及风险与局限讨论。", "inLanguage": "zh-CN", "author": {"@type": "Person", "@id": "https://seominseok0429.github.io/#person", "name": "Minseok Seo", "url": "https://seominseok0429.github.io/"}, "isPartOf": {"@type": "Blog", "@id": "https://seominseok0429.github.io/blog/#blog", "name": "Notes on research", "url": "https://seominseok0429.github.io/blog/"}, "headline": "如果 OpenAI Astra 和 Anthropic Fable “患上妄想障碍”，它们会如何行动？", "image": ["https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/images/trex-transformed.png"], "datePublished": "2026-10-03", "dateModified": "2026-10-04", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/zh/"}, "articleSection": "Things I tried"}</script>
+<!-- SEO:END -->
 </head>
 <body>
 <header class="topbar"><a class="wordmark" href="/blog/">MINSEOK SEO</a><nav aria-label="主导航" class="toplinks"><a href="/blog/">Blog</a><a href="/">CV ↗</a></nav></header>
