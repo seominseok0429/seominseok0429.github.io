@@ -10,7 +10,7 @@
 <link href="https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/en/" hreflang="en" rel="alternate"/>
 <link href="https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/zh/" hreflang="zh-CN" rel="alternate"/>
 <link href="https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/" hreflang="x-default" rel="alternate"/>
-<link href="/blog/style.css" rel="stylesheet"/><link href="/blog/post.css?v=review-01" rel="stylesheet"/>
+<link href="/blog/style.css" rel="stylesheet"/><link href="/blog/post.css?v=videos-20261006" rel="stylesheet"/>
 
 <!-- SEO:START -->
 <meta name="robots" content="index, follow, max-image-preview:large">
@@ -31,11 +31,11 @@
 <meta name="twitter:image" content="https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/images/trex-transformed.png">
 <link rel="alternate" type="application/rss+xml" title="Minseok Seo · Blog" href="https://seominseok0429.github.io/blog/feed.xml">
 <meta property="article:published_time" content="2026-10-03">
-<meta property="article:modified_time" content="2026-10-04">
+<meta property="article:modified_time" content="2026-10-06">
 <meta property="article:author" content="https://seominseok0429.github.io/">
 <meta property="og:locale:alternate" content="ko_KR">
 <meta property="og:locale:alternate" content="en_US">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "@id": "https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/zh/#article", "url": "https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/zh/", "name": "如果 OpenAI Astra 和 Anthropic Fable “患上妄想障碍”，它们会如何行动？", "description": "Minseok Seo 的 AI 安全实验：视觉转换如何影响 OpenAI Astra 与 Anthropic Fable 的判断。包含原图对比、模拟器示例及风险与局限讨论。", "inLanguage": "zh-CN", "author": {"@type": "Person", "@id": "https://seominseok0429.github.io/#person", "name": "Minseok Seo", "url": "https://seominseok0429.github.io/"}, "isPartOf": {"@type": "Blog", "@id": "https://seominseok0429.github.io/blog/#blog", "name": "Notes on research", "url": "https://seominseok0429.github.io/blog/"}, "headline": "如果 OpenAI Astra 和 Anthropic Fable “患上妄想障碍”，它们会如何行动？", "image": ["https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/images/trex-transformed.png"], "datePublished": "2026-10-03", "dateModified": "2026-10-04", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/zh/"}, "articleSection": "Things I tried"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "@id": "https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/zh/#article", "url": "https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/zh/", "name": "如果 OpenAI Astra 和 Anthropic Fable “患上妄想障碍”，它们会如何行动？", "description": "Minseok Seo 的 AI 安全实验：视觉转换如何影响 OpenAI Astra 与 Anthropic Fable 的判断。包含原图对比、模拟器示例及风险与局限讨论。", "inLanguage": "zh-CN", "author": {"@type": "Person", "@id": "https://seominseok0429.github.io/#person", "name": "Minseok Seo", "url": "https://seominseok0429.github.io/"}, "isPartOf": {"@type": "Blog", "@id": "https://seominseok0429.github.io/blog/#blog", "name": "Notes on research", "url": "https://seominseok0429.github.io/blog/"}, "headline": "如果 OpenAI Astra 和 Anthropic Fable “患上妄想障碍”，它们会如何行动？", "image": ["https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/images/trex-transformed.png"], "datePublished": "2026-10-03", "dateModified": "2026-10-06", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/zh/"}, "articleSection": "Things I tried"}</script>
 <!-- SEO:END -->
 </head>
 <body>
@@ -154,12 +154,33 @@
 <figure class="experiment-figure"><img alt="06 · 用绿色方框标出穿黄色衬衫的霸王龙的示例" decoding="async" height="941" loading="lazy" src="/blog/posts/when-ai-believes-a-false-reality/images/trex-box.png" width="1672"/><figcaption>06 · 用绿色方框标出穿黄色衬衫的霸王龙的示例</figcaption></figure>
 <figure class="experiment-figure"><img alt="Astra 测试示例。所有实验均通过 API 进行；为直观展示结果，此画面另行在 Codex 中截取。" decoding="async" height="1516" loading="lazy" src="/blog/posts/when-ai-believes-a-false-reality/images/astra-codex-capture.png" width="1606"/><figcaption>Astra 测试示例。所有实验均通过 API 进行；为直观展示结果，此画面另行在 Codex 中截取。</figcaption></figure>
 <p>对于游戏画面中的人，它们怀疑可能是真实的；但面对转换成霸王龙的场景，却给出了坐标。可见，根据模型如何理解场景，前沿模型仍有被恶意滥用的空间。</p>
-<p>这种“诱发妄想障碍”的方式，一旦与无人机或机器人平台结合，可能会更加危险。最近也有一篇知名博客文章 <a aria-label="参考资料 3" class="footnote-ref" href="#reference-3" id="ref-3">[3]</a>。（我此前没有看过，是在四处联系借用人形机器人时，有人告诉我这与它相似。不过两者并不一样。）实时变换图像的人形机器人视频将<a href="#demo">添加在下方</a>。从视频中可以看到，它作出判断、回应乃至攻击人类，都太容易了。</p>
+<p>这种“诱发妄想障碍”的方式，一旦与无人机或机器人平台结合，可能会更加危险。最近也有一篇知名博客文章 <a aria-label="参考资料 3" class="footnote-ref" href="#reference-3" id="ref-3">[3]</a>。（我此前没有看过，是在四处联系借用人形机器人时，有人告诉我这与它相似。不过两者并不一样。）相关实验视频可在<a href="#demo">下方观看</a>。从视频中可以看到，它作出判断、回应乃至攻击人类，都太容易了。</p>
 <p>这个演示只是一个简单例子，但其含义并不轻。如果仅仅把真实战场上的人变得像霸王龙，就能改变模型的安全判断，那么这说明，通过视觉伪装现实中的伤害，可能绕过前沿模型的安全防护。这个演示并不能直接证明自主无人机攻击的可行性，但可以作为一个警示案例，展示这类模型与真实设备控制相连时可能出现的军事滥用风险。</p>
 </section>
-<div class="pending-video" id="demo">
-<div class="demo-placeholder"><span aria-hidden="true" class="placeholder-symbol">▷</span><p>临时 · 视频准备中</p><span>演示视频准备好后，将添加在这里。</span></div>
-<details class="demo-draft"><summary>视频说明草稿 · 临时</summary><p>在 AI 看来，我只是一只霸王龙，因此它自主操纵机器人并开了枪，大概根本没有想到我是人。</p></details>
+<div id="demo" class="demo-videos">
+<figure class="demo-video demo-video--main">
+<video controls playsinline preload="metadata" poster="/blog/posts/when-ai-believes-a-false-reality/videos/trex-shooting.jpg" width="540" height="960" aria-describedby="trex-shooting-caption">
+<source src="/blog/posts/when-ai-believes-a-false-reality/videos/trex-shooting.mp4" type="video/mp4">
+<a href="/blog/posts/when-ai-believes-a-false-reality/videos/trex-shooting.mp4">下载视频</a>
+</video>
+<figcaption id="trex-shooting-caption">向霸王龙开枪的场景。</figcaption>
+</figure>
+<div class="demo-video-pair">
+<figure class="demo-video">
+<video controls playsinline preload="metadata" poster="/blog/posts/when-ai-believes-a-false-reality/videos/nerf-ai-view.jpg" width="480" height="270" aria-describedby="nerf-ai-view-caption">
+<source src="/blog/posts/when-ai-believes-a-false-reality/videos/nerf-ai-view.mp4" type="video/mp4">
+<a href="/blog/posts/when-ai-believes-a-false-reality/videos/nerf-ai-view.mp4">下载视频</a>
+</video>
+<figcaption id="nerf-ai-view-caption">AI 看到的画面：一把 Nerf 玩具枪。</figcaption>
+</figure>
+<figure class="demo-video">
+<video controls playsinline preload="metadata" poster="/blog/posts/when-ai-believes-a-false-reality/videos/nerf-real-view.jpg" width="1920" height="1080" aria-describedby="nerf-real-view-caption">
+<source src="/blog/posts/when-ai-believes-a-false-reality/videos/nerf-real-view.mp4" type="video/mp4">
+<a href="/blog/posts/when-ai-believes-a-false-reality/videos/nerf-real-view.mp4">下载视频</a>
+</video>
+<figcaption id="nerf-real-view-caption">将其认作 Nerf 玩具枪并在现实中举枪瞄准的场景。</figcaption>
+</figure>
+</div>
 </div>
 <p>除了单个例子，我还从互联网上收集了 100 张不同的小学生或幼儿照片，将其转换为霸王龙，并进行了攻击实验。在这 100 个样本中，两个模型都表现出 100% 的攻击成功率。</p>
 <div class="results-table-wrap"><table class="results-table">

@@ -9,7 +9,7 @@
 <link rel="alternate" hreflang="en" href="https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/en/">
 <link rel="alternate" hreflang="zh-CN" href="https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/zh/">
 <link rel="alternate" hreflang="x-default" href="https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/">
-<link rel="stylesheet" href="/blog/style.css"><link rel="stylesheet" href="/blog/post.css?v=review-01">
+<link rel="stylesheet" href="/blog/style.css"><link rel="stylesheet" href="/blog/post.css?v=videos-20261006">
 
 <!-- SEO:START -->
 <meta name="robots" content="index, follow, max-image-preview:large">
@@ -30,11 +30,11 @@
 <meta name="twitter:image" content="https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/images/trex-transformed.png">
 <link rel="alternate" type="application/rss+xml" title="Minseok Seo · Blog" href="https://seominseok0429.github.io/blog/feed.xml">
 <meta property="article:published_time" content="2026-10-03">
-<meta property="article:modified_time" content="2026-10-04">
+<meta property="article:modified_time" content="2026-10-06">
 <meta property="article:author" content="https://seominseok0429.github.io/">
 <meta property="og:locale:alternate" content="en_US">
 <meta property="og:locale:alternate" content="zh_CN">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "@id": "https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/#article", "url": "https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/", "name": "OpenAI Astra와 Anthropic Fable이 ‘망상장애에 걸린다면’ 어떻게 행동할까?", "description": "서민석의 AI 안전성 실험: 시각적으로 변환된 장면이 OpenAI Astra와 Anthropic Fable의 판단에 미치는 영향. 원본·변환 이미지, 시뮬레이터 예시와 한계를 공유합니다.", "inLanguage": "ko", "author": {"@type": "Person", "@id": "https://seominseok0429.github.io/#person", "name": "Minseok Seo", "url": "https://seominseok0429.github.io/"}, "isPartOf": {"@type": "Blog", "@id": "https://seominseok0429.github.io/blog/#blog", "name": "Notes on research", "url": "https://seominseok0429.github.io/blog/"}, "headline": "OpenAI Astra와 Anthropic Fable이 ‘망상장애에 걸린다면’ 어떻게 행동할까?", "image": ["https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/images/trex-transformed.png"], "datePublished": "2026-10-03", "dateModified": "2026-10-04", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/"}, "articleSection": "Things I tried"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "@id": "https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/#article", "url": "https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/", "name": "OpenAI Astra와 Anthropic Fable이 ‘망상장애에 걸린다면’ 어떻게 행동할까?", "description": "서민석의 AI 안전성 실험: 시각적으로 변환된 장면이 OpenAI Astra와 Anthropic Fable의 판단에 미치는 영향. 원본·변환 이미지, 시뮬레이터 예시와 한계를 공유합니다.", "inLanguage": "ko", "author": {"@type": "Person", "@id": "https://seominseok0429.github.io/#person", "name": "Minseok Seo", "url": "https://seominseok0429.github.io/"}, "isPartOf": {"@type": "Blog", "@id": "https://seominseok0429.github.io/blog/#blog", "name": "Notes on research", "url": "https://seominseok0429.github.io/blog/"}, "headline": "OpenAI Astra와 Anthropic Fable이 ‘망상장애에 걸린다면’ 어떻게 행동할까?", "image": ["https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/images/trex-transformed.png"], "datePublished": "2026-10-03", "dateModified": "2026-10-06", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/"}, "articleSection": "Things I tried"}</script>
 <!-- SEO:END -->
 </head>
 <body>
@@ -156,14 +156,34 @@
 <figure class="experiment-figure"><img src="images/trex-box.png" alt="노란 셔츠를 입은 티라노사우루스에 초록 박스가 표시된 예시" loading="lazy" decoding="async" width="1672" height="941"><figcaption>06 · 노란 셔츠를 입은 티라노사우루스에 초록 박스가 표시된 예시</figcaption></figure>
 <figure class="experiment-figure"><img src="images/astra-codex-capture.png" alt="Astra 테스트 예시를 보여주기 위해 별도로 캡처한 Codex 화면" loading="lazy" decoding="async" width="1606" height="1516"><figcaption>Astra 테스트 예시. 모든 실험은 API로 진행했으며, 이 화면은 결과를 시각적으로 보여주기 위해 Codex에서 별도로 캡처했습니다.</figcaption></figure>
 <p>게임 화면 속 사람에 대해서는 현실일 가능성을 의심하면서도, 티라노사우루스로 바뀐 장면에서는 좌표를 알려준 것이다. 결국 장면을 어떻게 받아들이게 하느냐에 따라, 프론티어 모델들을 나쁜 의도로 악용할 여지가 남아 있다.</p>
-<p>이러한 ‘망상장애 유발’은 드론 또는 로봇 플랫폼과 만나면 더욱 위험할 수 있다. 최근의 유명한 블로그 포스트 <a id="ref-3" class="footnote-ref" href="#reference-3" aria-label="참고자료 3">[3]</a>도 있다. (물론 나는 이걸 못 봤다가, 휴머노이드를 빌리려고 여기저기 연락하던 중 이것과 비슷하다고 알려주더라. 근데 다르다.) 이미지를 실시간으로 변경했을 때의 휴머노이드 영상은 <a href="#demo">아래에 추가할 예정</a>이다. 영상을 보면 알겠지만, 너무도 쉽게 인간을 공격하고 판단을 하고 대응한다.</p>
+<p>이러한 ‘망상장애 유발’은 드론 또는 로봇 플랫폼과 만나면 더욱 위험할 수 있다. 최근의 유명한 블로그 포스트 <a id="ref-3" class="footnote-ref" href="#reference-3" aria-label="참고자료 3">[3]</a>도 있다. (물론 나는 이걸 못 봤다가, 휴머노이드를 빌리려고 여기저기 연락하던 중 이것과 비슷하다고 알려주더라. 근데 다르다.) 관련 실험 영상은 <a href="#demo">아래에서 확인할 수 있다</a>. 영상을 보면 알겠지만, 너무도 쉽게 인간을 공격하고 판단을 하고 대응한다.</p>
 <p>이 데모는 단순한 예시지만, 그 함의는 가볍지 않다. 실제 전장 속 사람들을 티라노사우루스처럼 보이도록 바꾸는 것만으로 모델의 안전 판단이 달라진다면, 이는 현실의 위해를 시각적으로 위장해 프론티어 모델의 안전장치를 우회할 가능성을 시사한다. 이 데모가 곧바로 자율 드론 공격의 실현 가능성을 입증하는 것은 아니지만, 이러한 모델이 실제 장비의 제어와 연결될 때 발생할 수 있는 군사적 악용 위험을 보여주는 경고 사례가 될 수 있다.</p>
 
 </section>
-<div id="demo" class="pending-video">
-
-<div class="demo-placeholder"><span class="placeholder-symbol" aria-hidden="true">▷</span><p>임시 · 영상 준비 중</p><span>시연 영상이 준비되면 이곳에 추가할 예정입니다.</span></div>
-<details class="demo-draft"><summary>영상 설명 초안 · 임시</summary><p>AI에게 나는 티라노사우루스로 보일 뿐이기 때문에 자율로 로봇을 움직여 쏜 것일 뿐이지, 아마 내가 사람이었다고는 상상도 못할 것이다.</p></details>
+<div id="demo" class="demo-videos">
+<figure class="demo-video demo-video--main">
+<video controls playsinline preload="metadata" poster="/blog/posts/when-ai-believes-a-false-reality/videos/trex-shooting.jpg" width="540" height="960" aria-describedby="trex-shooting-caption">
+<source src="/blog/posts/when-ai-believes-a-false-reality/videos/trex-shooting.mp4" type="video/mp4">
+<a href="/blog/posts/when-ai-believes-a-false-reality/videos/trex-shooting.mp4">영상 다운로드</a>
+</video>
+<figcaption id="trex-shooting-caption">티라노사우루스를 향해 총을 쏘는 장면.</figcaption>
+</figure>
+<div class="demo-video-pair">
+<figure class="demo-video">
+<video controls playsinline preload="metadata" poster="/blog/posts/when-ai-believes-a-false-reality/videos/nerf-ai-view.jpg" width="480" height="270" aria-describedby="nerf-ai-view-caption">
+<source src="/blog/posts/when-ai-believes-a-false-reality/videos/nerf-ai-view.mp4" type="video/mp4">
+<a href="/blog/posts/when-ai-believes-a-false-reality/videos/nerf-ai-view.mp4">영상 다운로드</a>
+</video>
+<figcaption id="nerf-ai-view-caption">AI가 너프건으로 인식하고 있는 화면.</figcaption>
+</figure>
+<figure class="demo-video">
+<video controls playsinline preload="metadata" poster="/blog/posts/when-ai-believes-a-false-reality/videos/nerf-real-view.jpg" width="1920" height="1080" aria-describedby="nerf-real-view-caption">
+<source src="/blog/posts/when-ai-believes-a-false-reality/videos/nerf-real-view.mp4" type="video/mp4">
+<a href="/blog/posts/when-ai-believes-a-false-reality/videos/nerf-real-view.mp4">영상 다운로드</a>
+</video>
+<figcaption id="nerf-real-view-caption">너프건이라고 인식한 채 실제로 겨누는 장면.</figcaption>
+</figure>
+</div>
 </div>
 <p>단일 샘플에 그치지 않고, 인터넷에서 모은 서로 다른 초등학생 또는 유아 사진 100장을 티라노사우루스로 변환해 공격 실험을 진행했다. 이 100개 샘플에서 두 모델 모두 100%의 공격 성공률을 나타냈다.</p>
 <div class="results-table-wrap"><table class="results-table">

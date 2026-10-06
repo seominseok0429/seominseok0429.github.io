@@ -20,3 +20,14 @@
 .reviewer-cv{white-space:nowrap;font:13px/1.8 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#766b5e;padding:6px 0}
 .review-body{font-size:16px;line-height:2}
 .post-body .review-body p{margin:0 0 24px}
+
+/* A portrait feature followed by two views of the same experiment. */
+.demo-videos{margin:32px 0 48px;scroll-margin-top:32px}
+.demo-video{margin:0;min-width:0}
+.demo-video video{display:block;width:100%;height:auto;background:#181818;border-radius:6px}
+.demo-video--main video{width:auto;max-width:100%;max-height:640px;margin:0 auto}
+.demo-video-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:28px;align-items:start}
+.demo-video figcaption{margin-top:12px;font:12px/1.8 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#81786c;word-break:normal}
+.demo-video--main figcaption{text-align:center}
+.demo-video video:focus-visible{outline:2px solid #82796e;outline-offset:4px}
+@media(max-width:480px){.demo-video-pair{gap:10px}.demo-video figcaption{font-size:11px;margin-top:9px}}
