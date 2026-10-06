@@ -29,7 +29,6 @@ for p in sorted((ROOT/'blog').rglob('index.html')):
  desc=DESCRIPTIONS[lang] if is_post else COLLECTIONS[url.removeprefix(ORIGIN)]
  title=soup.title.get_text(); headline=soup.h1.get_text(' ',strip=True)
  # Only replace the metadata block; retain the visible page exactly.
- source=re.sub(r'\n?<!-- SEO:START -->.*?<!-- SEO:END -->\n?', '\n',source,flags=re.S)
  source=re.sub(r'<meta\b(?=[^>]*name="description")[^>]*>', '<meta name="description" content="'+html.escape(desc,quote=True)+'">',source)
  def meta(k,v,property=False): return '<meta '+('property' if property else 'name')+'="'+k+'" content="'+html.escape(v,quote=True)+'">'
  tags=[meta('robots','index, follow, max-image-preview:large'),meta('author','Minseok Seo')]
@@ -45,7 +44,11 @@ for p in sorted((ROOT/'blog').rglob('index.html')):
   for alt in soup.select('link[hreflang]'):
    if alt['hreflang'] not in (lang,'x-default'): tags.append(meta('og:locale:alternate',{'ko':'ko_KR','en':'en_US','zh-CN':'zh_CN'}[alt['hreflang']],True))
  tags.append('<script type="application/ld+json">'+json.dumps(schema,ensure_ascii=False).replace('</','<\\/')+'</script>')
- source=source.replace('</head>','\n<!-- SEO:START -->\n'+'\n'.join(tags)+'\n<!-- SEO:END -->\n</head>')
+ block='<!-- SEO:START -->\n'+'\n'.join(tags)+'\n<!-- SEO:END -->'
+ if re.search(r'<!-- SEO:START -->.*?<!-- SEO:END -->',source,flags=re.S):
+  source=re.sub(r'<!-- SEO:START -->.*?<!-- SEO:END -->',lambda _: block,source,count=1,flags=re.S)
+ else:
+  source=source.replace('</head>','\n'+block+'\n</head>')
  p.write_text(source)
  records.append((url,modified,soup,is_post,desc))
 
