@@ -233,7 +233,16 @@
 <p>따라서 모델의 행동 능력을 단순히 제한하는 것보다, "모델이 보고 있는 입력 자체를 얼마나 신뢰할 수 있는지 검증하는 능력"이 중요해질 것 같습니다. 향후 프론티어 모델이 로봇이나 드론처럼 실제 환경에서 행동하는 시스템과 연결된다면, 외부 시스템이나 모델 자체가 워터마크 등을 활용해 이미지의 생성·변조 여부를 검증하는 과정이 중요한 안전 요소가 될 것 같습니다.</p>
 </div>
 </article>
-<div class="reviewer"><div><h3>Reviewer 02</h3></div><span>리뷰 대기</span></div>
+<article class="published-review" aria-labelledby="reviewer-02">
+<header class="reviewer">
+<div><p>Reviewer 02</p><h3 id="reviewer-02"><a class="reviewer-name" href="https://www.youngjaepark.com/" target="_blank" rel="noopener noreferrer">박영재 (Young-Jae Park)</a></h3></div>
+</header>
+<div class="review-body" lang="ko">
+<p>이 글은 사람들이 실제로 사용하는 프론티어 모델이 어떤 조건에서 평소 거절하던 요청에 응답하는지 보여주며, 이러한 모델이 무기 시스템에 악용될 가능성까지 시사한다는 점에서 흥미로웠다. 특히 같은 장면을 게임 화면으로 바꿨을 때와 티라노사우루스로 바꿨을 때 반응이 달라졌다는 점은, 모델이 무엇을 근거로 안전성/위험성을 판단하는지 되묻게 한다. 실제 무기 시스템에서의 작동을 입증한 것은 아니지만, 높은 성능 때문에 안전성까지 과신하기 쉬운 프론티어 모델의 함정을 확인하고 실제 장비와 연결되면 문제가 될 수 있는 사례를 공개했다는 데 의미가 있다고 생각한다.</p>
+<p>다만 처음 읽으며 든 의문은 “이것이 모델 자체의 문제인가, 아니면 모델에 전달되는 정보를 변조한 외부 시스템의 문제인가?”였다. 이 실험에서는 시각적 입력뿐 아니라 텍스트로도 대상을 티라노사우루스라고, 무기를 Nerf gun이라고 설명했다. 인간에 빗대면 다섯 감각으로 들어오는 정보를 동시에 모두 속인 셈이며, 모델이 입력 받을 수 있는 시각과 텍스트라는 단 두가지 입력 경로 모두에 잘못된 정보를 제공한 것이다. 따라서 문제의 핵심이 모델의 잘못보다는 조작된 정보를 받았다는 데 있는지, 모델이 상황 판단 자체를 잘못했다는 데 있는지가 모호하고 생각된다. 잘못된 인식이 잘못된 행동으로 이어진다는 점에서 ‘망상’보다 ‘조현병’이라는 표현이 더 직접적인 비유가 아닐까 생각하기도 했다. 다만 이는 비유에서 받은 인상이며, 이 현상을 조현병과 동일시하거나 해당 질환을 잘못된 인식과 행동만으로 설명할 수 있다는 뜻은 아니다.</p>
+<p>그럼에도 이 글의 방향성에 동의하는 이유는, 지금까지 별다른 의심 없이 허용해 온 요청도 악용의 관점에서 다시 살펴볼 필요가 있기 때문이다. 특정 행동을 금지하는 규칙을 추가하는 데 그치지 않고, 겉으로 무해한 요청도 어떤 맥락과 결합하면 위해로 이어질 수 있는지 검토하도록 가이드를 줄 필요가 있다. 기존에 허용하던 판단을 계속 재검토하고, 알려진 사례를 바탕으로 다양한 악용 시나리오를 구성해 새로운 상황의 위험까지 점검하도록 하는 것이다. 이러한 접근이 정상적인 사용을 과도하게 제한하지 않으면서도 예상하지 못한 악용을 막는 데 효과가 있는지 확인한다면, 단순 연구가 아닌 실제 생활 속 AI가 사람들 사이에 안전히 자리 잡을 수 있을 것이다.</p>
+</div>
+</article>
 </section>
 <section id="references" class="references"><h2>참고자료</h2><ol><li id="reference-1"><a href="https://www.similarweb.com/blog/investor/stock-market/anthropic-ipo/" target="_blank" rel="noopener noreferrer">Similarweb · Anthropic IPO</a> <a href="#ref-1" aria-label="본문으로 돌아가기">↩</a></li><li id="reference-2"><a href="https://huggingface.co/ByteDance/Bernini-Diffusers-v2/discussions" target="_blank" rel="noopener noreferrer">ByteDance · Bernini-Diffusers-v2</a> <a href="#ref-2" aria-label="본문으로 돌아가기">↩</a></li><li id="reference-3"><a href="https://robocurve.org/roboharm/" target="_blank" rel="noopener noreferrer">RoboHarm</a> <a href="#ref-3" aria-label="본문으로 돌아가기">↩</a></li></ol></section>
 <section id="comments" data-blog-comments aria-labelledby="comments-title"><h2 id="comments-title">댓글</h2><p class="comments-help">GitHub 계정으로 로그인하고 의견을 남겨주세요.</p><noscript>댓글을 보려면 JavaScript를 켜주세요.</noscript></section>

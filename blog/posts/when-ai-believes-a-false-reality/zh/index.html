@@ -218,7 +218,7 @@
 </section>
 <section id="peer-review" class="peer-review-section">
 <div class="section-heading"><h2>Peer review</h2></div>
-<p class="pending-description">以下为评审的中文翻译。<a href="../#reviewer-01">韩文原文</a>未经修改，完整公开。</p>
+<p class="pending-description">以下为两篇评审的中文翻译。<a href="../#peer-review">韩文原文</a>未经修改，完整公开。</p>
 <article class="published-review" aria-labelledby="reviewer-01">
 <header class="reviewer">
 <div><p>Reviewer 01</p><h3 id="reviewer-01"><a class="reviewer-name" href="https://cilabs.kaist.ac.kr/members/ph-d/seokil-ham" target="_blank" rel="noopener noreferrer">Seokil Ham (함석일)</a></h3></div>
@@ -229,7 +229,16 @@
 <p>因此，相比于简单地限制模型的行动能力，“验证模型所看到的输入本身究竟有多可信的能力”可能会变得更加重要。未来，如果前沿模型与机器人或无人机这类能够在真实环境中行动的系统相连接，那么，由外部系统或模型自身利用水印等手段来验证图像是否经过生成或篡改的过程，可能会成为一个重要的安全环节。</p>
 </div>
 </article>
-<div class="reviewer"><div><h3>Reviewer 02</h3></div><span>等待评审</span></div>
+<article class="published-review" aria-labelledby="reviewer-02">
+<header class="reviewer">
+<div><p>Reviewer 02</p><h3 id="reviewer-02"><a class="reviewer-name" href="https://www.youngjaepark.com/" target="_blank" rel="noopener noreferrer">Young-Jae Park (박영재)</a></h3></div>
+</header>
+<div class="review-body" lang="zh-CN">
+<p>这篇文章展示了人们实际使用的前沿模型会在什么条件下回应平时会拒绝的请求，并进一步提示了这类模型被滥用于武器系统的可能性，这一点令我感到有趣。尤其是将同一场景转换成游戏画面和转换成霸王龙画面时，模型的反应有所不同，这让人重新追问：模型究竟根据什么来判断安全性与危险性？虽然这并未证明模型在实际武器系统中的运作，但我认为，这篇文章揭示了前沿模型的一个陷阱——人们很容易因为其性能出色而连同安全性也一并过度信任——并公开了一个在连接实际设备后可能引发问题的案例，这具有意义。</p>
+<p>不过，初读时我产生的疑问是：“这是模型本身的问题，还是篡改了传递给模型的信息的外部系统的问题？”在这项实验中，不仅视觉输入被改变，文本也将目标描述为霸王龙，将武器描述为 Nerf gun。若类比人类，这相当于同时欺骗了五种感官传入的全部信息，也就是向模型能够接收的视觉和文本这仅有的两条输入渠道都提供了错误信息。因此，我觉得问题的核心究竟在于模型接收到了被操纵的信息，而非模型本身的过错，还是在于模型对情境本身做出了错误判断，尚不明确。从错误的认知导致错误的行为这一点来看，我也曾想过，相比“妄想”，“精神分裂症”是否是一个更直接的比喻。不过，这只是这个比喻给我的印象，并不意味着将这一现象等同于精神分裂症，也不意味着可以仅凭错误的认知与行为来解释这种疾病。</p>
+<p>尽管如此，我仍然赞同这篇文章的方向，因为我们有必要从滥用的角度，重新审视那些迄今为止几乎未经怀疑就被允许的请求。我们不应止步于增加禁止特定行为的规则，还需要提供指引，让模型审视那些表面上无害的请求与什么样的情境相结合时，也可能导致伤害。也就是说，要持续重新审视原先允许的判断，并基于已知案例构建多种滥用情境，进而检查新情境中的风险。如果能够验证这种方法是否在不过度限制正常使用的同时，有效防止未曾预料的滥用，那么 AI 就能不再停留于单纯的研究，而是在实际生活中安全地融入人们之中。</p>
+</div>
+</article>
 </section>
 <section class="references" id="references"><h2>参考资料</h2><ol><li id="reference-1"><a href="https://www.similarweb.com/blog/investor/stock-market/anthropic-ipo/" rel="noopener noreferrer" target="_blank">Similarweb · Anthropic IPO</a> <a aria-label="返回正文" href="#ref-1">↩</a></li><li id="reference-2"><a href="https://huggingface.co/ByteDance/Bernini-Diffusers-v2/discussions" rel="noopener noreferrer" target="_blank">ByteDance · Bernini-Diffusers-v2</a> <a aria-label="返回正文" href="#ref-2">↩</a></li><li id="reference-3"><a href="https://robocurve.org/roboharm/" rel="noopener noreferrer" target="_blank">RoboHarm</a> <a aria-label="返回正文" href="#ref-3">↩</a></li></ol></section>
 <section aria-labelledby="comments-title" data-blog-comments="" data-comment-term="blog/posts/when-ai-believes-a-false-reality/" id="comments"><h2 id="comments-title">评论</h2><p class="comments-help">请使用 GitHub 账号登录并分享你的看法。</p><noscript>请启用 JavaScript 以查看评论。</noscript></section>
