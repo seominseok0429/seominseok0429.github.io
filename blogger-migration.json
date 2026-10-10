@@ -1,0 +1,75 @@
+{
+  "migration_date": "2026-10-10",
+  "source_origin": "https://seominseok0429.github.io",
+  "destination_origin": "https://minseok-notes.blogspot.com",
+  "source_commit": "30ec20ace0bfb48174229741328330a5a482fc76",
+  "backup_package": "github-pages-pre-migration-2026-10-10.zip",
+  "routes": [
+    {
+      "source_path": "index.html",
+      "source_url": "https://seominseok0429.github.io/",
+      "destination_url": "https://minseok-notes.blogspot.com/",
+      "language": "en"
+    },
+    {
+      "source_path": "blog/index.html",
+      "source_url": "https://seominseok0429.github.io/blog/",
+      "destination_url": "https://minseok-notes.blogspot.com/search",
+      "language": "en"
+    },
+    {
+      "source_path": "blog/my-papers/index.html",
+      "source_url": "https://seominseok0429.github.io/blog/my-papers/",
+      "destination_url": "https://minseok-notes.blogspot.com/search/label/My%20papers",
+      "language": "en"
+    },
+    {
+      "source_path": "blog/open-experiments/index.html",
+      "source_url": "https://seominseok0429.github.io/blog/open-experiments/",
+      "destination_url": "https://minseok-notes.blogspot.com/search/label/Things%20I%20tried",
+      "language": "en"
+    },
+    {
+      "source_path": "blog/paper-reviews/index.html",
+      "source_url": "https://seominseok0429.github.io/blog/paper-reviews/",
+      "destination_url": "https://minseok-notes.blogspot.com/search",
+      "language": "en"
+    },
+    {
+      "source_path": "blog/tech-notes/index.html",
+      "source_url": "https://seominseok0429.github.io/blog/tech-notes/",
+      "destination_url": "https://minseok-notes.blogspot.com/search",
+      "language": "en"
+    },
+    {
+      "source_path": "blog/ideas/index.html",
+      "source_url": "https://seominseok0429.github.io/blog/ideas/",
+      "destination_url": "https://minseok-notes.blogspot.com/search",
+      "language": "en"
+    },
+    {
+      "source_path": "blog/posts/when-ai-believes-a-false-reality/index.html",
+      "source_url": "https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/",
+      "destination_url": "https://minseok-notes.blogspot.com/2026/10/when-ai-believes-a-false-reality.html",
+      "language": "ko"
+    },
+    {
+      "source_path": "blog/posts/when-ai-believes-a-false-reality/en/index.html",
+      "source_url": "https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/en/",
+      "destination_url": "https://minseok-notes.blogspot.com/2026/10/blog-post.html",
+      "language": "en"
+    },
+    {
+      "source_path": "blog/posts/when-ai-believes-a-false-reality/zh/index.html",
+      "source_url": "https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/zh/",
+      "destination_url": "https://minseok-notes.blogspot.com/2026/10/blog-post_10.html",
+      "language": "zh-CN"
+    }
+  ],
+  "notes": [
+    "GitHub Pages cannot configure HTTP 301 through this static site. Entry routes use immediate meta refresh, cross-origin canonical and location.replace.",
+    "JavaScript preserves URL fragments, including peer-review and CV section anchors.",
+    "Media, scripts, styles, downloadable PDFs, project pages and verification tokens are not moved or deleted.",
+    "The old RSS feed retains historical GUIDs and points readers to the Blogger feed."
+  ]
+}

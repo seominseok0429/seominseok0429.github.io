@@ -1,3 +1,22 @@
+# Minseok Seo — legacy site and assets
+
+The CV and blog have moved to **[minseok-notes.blogspot.com](https://minseok-notes.blogspot.com/)**.
+
+- [CV](https://minseok-notes.blogspot.com/)
+- [Blog](https://minseok-notes.blogspot.com/search)
+- [When AI believes a false reality](https://minseok-notes.blogspot.com/2026/10/when-ai-believes-a-false-reality.html)
+- [New RSS feed](https://minseok-notes.blogspot.com/feeds/posts/default?alt=rss)
+
+This repository remains deployed to preserve the old CV/blog links, image and video URLs, PDFs, and other project pages. Do not delete or rename retained assets: the new Blogger site still uses them.
+
+`blogger-migration.json` records each migrated route and its destination. The static redirects use an immediate meta refresh, a canonical URL, and JavaScript `location.replace` preserving the URL fragment. They are **not HTTP 301 responses**. The legacy sitemap intentionally lists only this GitHub Pages hostname so crawlers can discover the redirects during the transition; the new site has its own Blogger sitemap.
+
+Content is now edited in Blogger. Do not run the historic blog metadata generator on this redirected site. It has a migration guard to avoid replacing the transition feed and sitemap. The pre-migration source remains in Git history at `30ec20ace0bfb48174229741328330a5a482fc76`, and a separate local backup package was created before modifying these files. Reverting the migration commit restores the old HTML without deleting media.
+
+## Historical theme and maintenance notes
+
+The notes below describe the pre-migration site and are retained as development history.
+
 # Minimal Theme
 
 [Demo the Theme](http://orderedlist.github.com/minimal/)

@@ -6,6 +6,8 @@ import html, json, re, subprocess
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
+if (ROOT / 'blogger-migration.json').exists():
+ raise SystemExit('This site has migrated to Blogger. Do not regenerate the legacy blog metadata; see README.md.')
 ORIGIN = 'https://seominseok0429.github.io'
 POST = '/blog/posts/when-ai-believes-a-false-reality/'
 IMAGE = ORIGIN + POST + 'images/trex-transformed.png'

@@ -1,42 +1,31 @@
 <?xml version='1.0' encoding='utf-8'?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://seominseok0429.github.io/</loc>
+    <lastmod>2026-10-10</lastmod>
   </url>
   <url>
     <loc>https://seominseok0429.github.io/blog/</loc>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-10</lastmod>
   </url>
   <url>
     <loc>https://seominseok0429.github.io/blog/my-papers/</loc>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-10</lastmod>
   </url>
   <url>
     <loc>https://seominseok0429.github.io/blog/open-experiments/</loc>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-10</lastmod>
   </url>
   <url>
     <loc>https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/en/</loc>
-    <lastmod>2026-10-06</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/en/" />
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/zh/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/" />
+    <lastmod>2026-10-10</lastmod>
   </url>
   <url>
     <loc>https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/</loc>
-    <lastmod>2026-10-06</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/en/" />
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/zh/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/" />
+    <lastmod>2026-10-10</lastmod>
   </url>
   <url>
     <loc>https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/zh/</loc>
-    <lastmod>2026-10-06</lastmod>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/en/" />
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/zh/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://seominseok0429.github.io/blog/posts/when-ai-believes-a-false-reality/" />
+    <lastmod>2026-10-10</lastmod>
   </url>
 </urlset>

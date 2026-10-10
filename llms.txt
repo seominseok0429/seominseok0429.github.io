@@ -1,0 +1,16 @@
+# Minseok Seo — site migration
+
+> The CV and blog have moved to https://minseok-notes.blogspot.com/.
+> The old GitHub Pages site retains media and document assets so existing links continue to work.
+
+## Current site
+
+- [CV](https://minseok-notes.blogspot.com/): Minseok Seo, Ph.D. student at KAIST.
+- [Blog](https://minseok-notes.blogspot.com/search): Research notes and things tried.
+- [Korean article](https://minseok-notes.blogspot.com/2026/10/when-ai-believes-a-false-reality.html)
+- [English article](https://minseok-notes.blogspot.com/2026/10/blog-post.html)
+- [Chinese article](https://minseok-notes.blogspot.com/2026/10/blog-post_10.html)
+- [RSS feed](https://minseok-notes.blogspot.com/feeds/posts/default?alt=rss)
+- [Current sitemap](https://minseok-notes.blogspot.com/sitemap.xml)
+
+The article reports the author’s AI safety experiments and peer reviews. The links above are the current publication locations. This file is a navigation aid, not a search-engine registration mechanism.
